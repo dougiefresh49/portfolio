@@ -34,7 +34,7 @@
               <v-card-title primary-title>
                 <span class="headline">Open Source</span>
                 <v-spacer></v-spacer>
-                <v-btn class="text-xs-right" outline color="white">More</v-btn>
+                <v-btn class="text-xs-right" outline color="white" nuxt to="/open-source">More</v-btn>
               </v-card-title>
             </v-card>
           </v-flex>
