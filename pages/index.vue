@@ -98,7 +98,7 @@
   export default {
     methods: {
       parallaxSrc () {
-        return this.$vuetify.breakpoint.name === 'xs' ? '/doug-and-odin-codin-3.png' : '/doug-and-odin-codin-2.png'
+        return this.$vuetify.breakpoint.name === 'xs' ? '/doug-and-odin-codin-xs.png' : '/doug-and-odin-codin.png'
       }
     }
   }
