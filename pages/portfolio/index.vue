@@ -53,14 +53,13 @@
 </style>
 <script>
   import InfoCardCluster from '~/components/info-card-cluster'
-  import {PROJECT_CATEGORIES, FidelityProjects, FreelanceProjects} from './projects'
+  import {FidelityProjects, FreelanceProjects} from './projects'
 
   export default {
     data () {
       let projectsInView = FidelityProjects
 
       return {
-        PROJECT_CATEGORIES,
         FidelityProjects,
         FreelanceProjects,
         projectsInView

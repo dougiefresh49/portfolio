@@ -120,11 +120,6 @@ const RapidRosterProject = {
   img: '/loki-computer.png'
 }
 
-export const PROJECT_CATEGORIES = {
-  FIDELITY: 'Fidelity',
-  FREELANCE: 'Freelance'
-}
-
 export const FidelityProjects = [
   WatchlistProject,
   MarginImpactProject,
