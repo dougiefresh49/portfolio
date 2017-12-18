@@ -1,9 +1,10 @@
 <template>
 <div>
-  <v-parallax src="/material-design-lake.png">
-    <v-layout column align-center justify-center>
-      <!-- <h1 class="white--text">dougiefresh49</h1> -->
-      <h4 class="white--text">Dream big. Code with friends.</h4>
+  <v-parallax :src="parallaxSrc()">
+    <v-layout column align-center>
+      <v-flex d-flex>
+        <h3 class="grey--text">Dream big. Code with friends.</h3>
+      </v-flex>
     </v-layout>
   </v-parallax>
   <v-container fluid grid-list-lg>
@@ -84,9 +85,6 @@
   border-radius: 5px;
   font-weight: 500;
 }
-.fill-85 {
-  height: 85%;
-}
 .card--bubble {
   padding: 10px 15px;
   font-size: 15px;
@@ -96,3 +94,12 @@
   /* change bubble text to color: #727276; */
 }
 </style>
+<script>
+  export default {
+    methods: {
+      parallaxSrc () {
+        return this.$vuetify.breakpoint.name === 'xs' ? '/doug-and-odin-codin-3.png' : '/doug-and-odin-codin-2.png'
+      }
+    }
+  }
+</script>
