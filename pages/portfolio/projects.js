@@ -1,7 +1,10 @@
 const MarginImpactProject = {
   title: 'Margin Impact Calculator',
   desc: 'An small, innovative solution that provides traders real time calculations about how a particular trade could effect their margin account',
-  details: ['TODO'],
+  details: [
+    'Served as the lead architect and front-end developer on this high priority project that was completed in a little more than nine months.',
+    'I designed this AngularJs app to be flexible enough so that is could pop up like an info bubble on any Fidelity.com page, irrelevant to the web technology used on that page.'
+  ],
   readMore: '/resume',
   icons: [
     {img: '/tech-icons/angular-icon.svg', href: 'https://angularjs.org/'},
