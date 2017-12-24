@@ -43,9 +43,7 @@
                     <v-card flat tile class="text-sm-center pa-5">
                         <v-layout column align-center justify-center>
                             <h4 class="grey--text mb-0">See a full list of projects, awards, and skills over on my resume.</h4>
-                            <v-btn outline color="grey darken-1" class="mt-5"
-                                   nuxt
-                                   href="/resume">View All</v-btn>
+                            <v-btn outline color="grey darken-1" class="mt-5" nuxt href="/resume">View All</v-btn>
                         </v-layout>
                     </v-card>
                 </v-flex>
