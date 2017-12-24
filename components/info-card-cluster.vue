@@ -1,8 +1,8 @@
 <template>
     <div>
         <v-layout row wrap v-for="(card, index) in cards" :key="card.title">
-            <v-flex d-flex xs12 sm6 v-if="index % 2 === 1">
-                <v-card :img="card.img" flat tile></v-card>
+            <v-flex d-flex xs12 sm6 v-if="doShowImageFirst(index)">
+                <v-card :img="card.img" flat tile :height="getImageHeight(card.img)"></v-card>
             </v-flex>
             <info-card :title="card.title"
                        :desc="card.desc"
@@ -12,8 +12,8 @@
                        :readMore="card.readMore"
                        :btn="card.button">
             </info-card>
-            <v-flex d-flex xs12 sm6 v-if="index % 2 === 0">
-                <v-card :img="card.img" flat tile></v-card>
+            <v-flex d-flex xs12 sm6 v-if="doShowImageSecond(index)">
+                <v-card :img="card.img" flat tile :height="getImageHeight(card.img)"></v-card>
             </v-flex>
         </v-layout>
     </div>
@@ -31,6 +31,28 @@
     components: {
       FloatingIcon,
       InfoCard
+    },
+    methods: {
+      getImageHeight (cardImg) {
+        if (!cardImg) {
+          return 'auto'
+        }
+        switch (this.$vuetify.breakpoint.name) {
+          case 'xs':
+            return '500px'
+          case 'sm':
+          case 'md':
+          case 'lg':
+          case 'xl':
+            return 'auto'
+        }
+      },
+      doShowImageFirst (idx) {
+        return (idx % 2 === 0 || this.$vuetify.breakpoint.name === 'xs')
+      },
+      doShowImageSecond (idx) {
+        return (idx % 2 === 1 && this.$vuetify.breakpoint.name !== 'xs')
+      }
     }
   }
 </script>
