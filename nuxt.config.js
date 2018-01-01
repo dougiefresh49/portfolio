@@ -14,7 +14,11 @@ module.exports = {
     ]
   },
   plugins: ['~/plugins/vuetify.js'],
-  css: ['~/assets/style/app.styl'],
+  css: [
+    'mdi/css/materialdesignicons.min.css',
+    'font-awesome/css/font-awesome.min.css',
+    '~/assets/style/app.styl'
+  ],
   build: {
     vendor: [
       'axios',
@@ -35,4 +39,4 @@ module.exports = {
       }
     }
   }
-};
+}
