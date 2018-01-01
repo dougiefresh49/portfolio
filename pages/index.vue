@@ -19,7 +19,7 @@
               <v-card-title primary-title>
                 <span class="headline">About Me</span>
                 <v-spacer></v-spacer>
-                <v-btn class="text-xs-right" outline color="white">More</v-btn>
+                <v-btn class="text-xs-right" outline color="white" nuxt to="/about">More</v-btn>
               </v-card-title>
               <!-- <v-flex d-flex xs12 sm6 md4>
                 <v-card color="white" class="card--bubble" dark>
@@ -53,7 +53,7 @@
               <v-card-title primary-title>
                 <span class="headline">Portfolio</span>
                 <v-spacer></v-spacer>
-                <v-btn class="text-xs-right" outline color="white">More</v-btn>
+                <v-btn class="text-xs-right" outline color="white" nuxt to="/portfolio">More</v-btn>
               </v-card-title>
             </v-card>
           </v-flex>
@@ -64,7 +64,7 @@
               <v-card-title primary-title>
                 <span class="headline">Resume</span>
                 <v-spacer></v-spacer>
-                <v-btn class="text-xs-right" outline color="white">More</v-btn>
+                <v-btn class="text-xs-right" outline color="white" nuxt to="/resume">More</v-btn>
               </v-card-title>
             </v-card>
           </v-flex>
