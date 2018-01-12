@@ -1,10 +1,14 @@
 const MarginImpactProject = {
   title: 'Margin Impact Calculator',
   desc: 'An small, innovative solution that provides traders real time calculations about how a particular trade could effect their margin account',
-  details: [
-    'Served as the lead architect and front-end developer on this high priority project that was completed in a little more than nine months.',
-    'I designed this AngularJs app to be flexible enough so that is could pop up like an info bubble on any Fidelity.com page, irrelevant to the web technology used on that page.'
-  ],
+  details: [{
+    subtitle: 'Contributions',
+    spacing: 'double',
+    info: [
+      'Served as the lead architect and front-end developer on this high priority project that was completed in a little more than nine months.',
+      'I designed this AngularJs app to be flexible enough so that is could pop up like an info bubble on any Fidelity.com page, irrelevant to the web technology used on that page.'
+    ]
+  }],
   readMore: '/resume',
   icons: [
     {img: '/tech-icons/angular-icon.svg', href: 'https://angularjs.org/'},
@@ -16,16 +20,20 @@ const MarginImpactProject = {
     href: 'https://brokerage.fidelity.com/ftgw/brkg/watchlist/',
     text: 'View'
   },
-  img: '/jack-trade-ticket.jpg'
+  images: ['/jack-trade-ticket.jpg']
 }
 
 const WatchlistProject = {
   title: 'Watchlist',
   desc: 'A brand new, completely customizable, watchlist experience with the first ever streaming quotes on Fidelity.com.',
-  details: [
-    'Currently serving as the lead AngularJs and Node developer as well as the project architect.',
-    'I have lead the effort in developing Fidelity.com\'s first streaming quotes solution with optimized data flow for the best customer experience.'
-  ],
+  details: [{
+    subtitle: 'Contributions',
+    spacing: 'double',
+    info: [
+      'Currently serving as the lead AngularJs and Node developer as well as the project architect.',
+      'I have lead the effort in developing Fidelity.com\'s first streaming quotes solution with optimized data flow for the best customer experience.'
+    ]
+  }],
   readMore: '/resume',
   icons: [
     {img: '/tech-icons/angular-icon.svg', href: 'https://angularjs.org/'},
@@ -37,16 +45,20 @@ const WatchlistProject = {
     href: 'https://brokerage.fidelity.com/ftgw/brkg/watchlist/',
     text: 'View'
   },
-  img: '/odin-watchlist.png'
+  images: ['/odin-watchlist.png']
 }
 
 const TradeTicketProject = {
   title: 'Trade Ticket',
   desc: 'The new, all in one, trading experience that is now used across Fidelity.com for quick easy trading.',
-  details: [
-    'Joined the project to help finish the final few features, increase test coverage and improve code quality.',
-    'I learned how to architect large scale backbone applications and helped lead the effort in best practices and refactor work where necessary.'
-  ],
+  details: [{
+    subtitle: 'Contributions',
+    spacing: 'double',
+    info: [
+      'Joined the project to help finish the final few features, increase test coverage and improve code quality.',
+      'I learned how to architect large scale backbone applications and helped lead the effort in best practices and refactor work where necessary.'
+    ]
+  }],
   readMore: '/resume',
   icons: [
     {img: '/tech-icons/backbone-icon.svg', padding: 'pl-1', href: 'http://backbonejs.org/'},
@@ -58,16 +70,20 @@ const TradeTicketProject = {
     href: 'https://brokerage.fidelity.com/ftgw/brkg/watchlist/',
     text: 'View'
   },
-  img: '/loki-computer.png'
+  images: ['/loki-computer.png']
 }
 
 const EmilyJeanProject = {
   title: 'Emily Jean Portfolio',
   desc: 'A simple but elegant portfolio to showcase my friend\'s accomplishments.',
-  details: [
-    'Established the overall app architecture and setup the server to render the already created Bootstrap driven frontend.',
-    'Also setup the Heroku pipeline for automatic deployments and syncing with the GitHub repository'
-  ],
+  details: [{
+    subtitle: 'Contributions',
+    spacing: 'double',
+    info: [
+      'Established the overall app architecture and setup the server to render the already created Bootstrap driven frontend.',
+      'Also setup the Heroku pipeline for automatic deployments and syncing with the GitHub repository'
+    ]
+  }],
   icons: [
     {img: '/tech-icons/javascript.svg'},
     {img: '/tech-icons/nodejs-icon.svg', href: 'https://nodejs.org/'},
@@ -78,16 +94,20 @@ const EmilyJeanProject = {
     href: 'https://brokerage.fidelity.com/ftgw/brkg/watchlist/',
     text: 'View'
   },
-  img: '/odin-watchlist.png'
+  images: ['/odin-watchlist.png']
 }
 
 const GfwkProject = {
   title: 'Get Fit With Kim',
   desc: 'An elaborate fitness site designed to make registering for events and services a snap from desktop or mobile.',
-  details: [
-    'Created the website for a fitness instructor to help clients sign up for upcoming events and manage diet plans.',
-    'The site also allowed for Kim to view and contact all attendees of any event.'
-  ],
+  details: [{
+    subtitle: 'Contributions',
+    spacing: 'double',
+    info: [
+      'Created the website for a fitness instructor to help clients sign up for upcoming events and manage diet plans.',
+      'The site also allowed for Kim to view and contact all attendees of any event.'
+    ]
+  }],
   readMore: '/resume',
   icons: [
     {img: '/tech-icons/angular-icon.svg', href: 'https://angularjs.org/'},
@@ -99,17 +119,21 @@ const GfwkProject = {
     href: 'http://www.getfitwithkimtoday.com/#/',
     text: 'View'
   },
-  img: '/jack-trade-ticket.jpg'
+  images: ['/jack-trade-ticket.jpg']
 }
 
 const RapidRosterProject = {
   title: 'Rapid Roster',
   desc: 'A simple sports app designed to allow offline viewing of statistics and team matchups with an elegant design',
-  details: [
-    'Created and designed the initial prototype of the iOS application using Parse for query caching to accomplish offline stats viewing.',
-    'The app was designed to be similar to ESPN© but allowed for better offline access, at the time, to team and player statistics.',
-    'I no longer work on this app, but the original owner is still maintaining and updating the app.'
-  ],
+  details: [{
+    subtitle: 'Contributions',
+    spacing: 'double',
+    info: [
+      'Created and designed the initial prototype of the iOS application using Parse for query caching to accomplish offline stats viewing.',
+      'The app was designed to be similar to ESPN© but allowed for better offline access, at the time, to team and player statistics.',
+      'I no longer work on this app, but the original owner is still maintaining and updating the app.'
+    ]
+  }],
   readMore: '/resume',
   icons: [
     {img: '/tech-icons/apple.svg'},
@@ -120,7 +144,7 @@ const RapidRosterProject = {
     href: 'https://itunes.apple.com/us/app/rapidroster-college-football/id1028810756?mt=8',
     text: 'View'
   },
-  img: '/loki-computer.png'
+  images: ['/loki-computer.png']
 }
 
 export const FidelityProjects = [
