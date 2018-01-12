@@ -1,24 +1,44 @@
 <template>
     <div>
-        <v-layout row wrap v-for="(card, index) in cards" :key="card.title">
-            <v-flex d-flex xs12 sm6 v-if="doShowImageFirst(index)">
-                <v-card :img="card.img" flat tile :height="getImageHeight(card.img)"></v-card>
-            </v-flex>
-            <info-card :title="card.title"
-                       :desc="card.desc"
-                       :subtitle="'Contributions'"
-                       :details="card.details"
-                       :icons="card.icons"
-                       :readMore="card.readMore"
-                       :btn="card.button">
-            </info-card>
-            <v-flex d-flex xs12 sm6 v-if="doShowImageSecond(index)">
-                <v-card :img="card.img" flat tile :height="getImageHeight(card.img)"></v-card>
-            </v-flex>
-        </v-layout>
+        <div v-for="(card, index) in cards" :key="card.title">
+            <card-banner v-if="card.banner"
+                         :img="card.banner.img"
+                         :height="card.banner.height"
+                         :text="card.banner.text"
+                         :text-color="card.banner.textColor">
+            </card-banner>
+            <v-container fluid grid-list-xl class="bkg-white">
+                <v-layout row wrap>
+                    <v-flex d-flex xs12 sm6 v-if="card.images && doShowImageFirst(index)">
+                        <v-layout column>
+                            <v-flex d-flex v-for="img in card.images" :key="img">
+                                <v-card :img="img" flat tile :height="getImageHeight(img)"></v-card>
+                            </v-flex>
+                        </v-layout>
+                    </v-flex>
+                    <v-flex d-flex xs12 sm6>
+                        <info-card :title="card.title"
+                                   :desc="card.desc"
+                                   :details="card.details"
+                                   :icons="card.icons"
+                                   :readMore="card.readMore"
+                                   :btn="card.button">
+                        </info-card>
+                    </v-flex>
+                    <v-flex d-flex xs12 sm6 v-if="card.images && doShowImageSecond(index)">
+                        <v-layout column>
+                            <v-flex d-flex v-for="img in card.images" :key="img">
+                                <v-card :img="img" flat tile :height="getImageHeight(img)"></v-card>
+                            </v-flex>
+                        </v-layout>
+                    </v-flex>
+                </v-layout>
+            </v-container>
+        </div>
     </div>
 </template>
 <script>
+  import CardBanner from '~/components/card-banner.vue'
   import FloatingIcon from '~/components/floating-icon.vue'
   import InfoCard from '~/components/info-card.vue'
   export default {
@@ -29,6 +49,7 @@
       }
     },
     components: {
+      CardBanner,
       FloatingIcon,
       InfoCard
     },
