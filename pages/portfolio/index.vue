@@ -1,8 +1,8 @@
 <template>
     <div>
         <v-parallax src="/odin-napping-on-the-job.png"></v-parallax>
+        <!-- Icon Selectors -->
         <v-container fluid grid-list-xl class="bkg-white">
-            <!-- Icon Selectors -->
             <v-layout row wrap>
                 <v-flex d-flex xs5 sm3 offset-xs1 offset-sm3>
                     <v-card flat tile
@@ -37,7 +37,9 @@
                     </v-card>
                 </v-flex>
             </v-layout>
-            <info-card-cluster :cards="projectsInView"></info-card-cluster>
+        </v-container>
+        <info-card-cluster :cards="projectsInView"></info-card-cluster>
+        <v-container fluid grid-list-xl class="bkg-white">
             <v-layout row wrap>
                 <v-flex d-flex xs12>
                     <v-card flat tile class="text-sm-center pa-5">
@@ -78,7 +80,7 @@
 </style>
 <script>
   import InfoCardCluster from '~/components/info-card-cluster'
-  import {FidelityProjects, FreelanceProjects} from './projects'
+  import {FidelityProjects, FreelanceProjects} from './projects-data'
 
   export default {
     data () {
