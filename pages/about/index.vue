@@ -6,9 +6,10 @@
             <v-layout row>
                 <v-flex d-flex xs5 sm3>
                     <v-card flat tile
-                            class="text-sm-center icon-card grey--text">
+                            class="text-sm-center icon-card grey--text"
+                            :class="{'active': cardsInView === AboutMeCards}">
                         <v-layout column align-center>
-                            <div class="icon-card-body">
+                            <div class="icon-card-body" v-on:click="cardsInView = AboutMeCards">
                                 <v-card-media src="/doug-snow.JPG"
                                               class="icon-img-circle"
                                               :class="{'small': $vuetify.breakpoint.xsOnly}"
@@ -21,9 +22,10 @@
                 </v-flex>
                 <v-flex d-flex xs5 sm3>
                     <v-card flat tile
-                            class="text-sm-center icon-card grey--text">
+                            class="text-sm-center icon-card grey--text"
+                            :class="{'active': cardsInView === AboutFamilyCards}">
                         <v-layout column align-center>
-                            <div class="icon-card-body">
+                            <div class="icon-card-body" v-on:click="cardsInView = AboutFamilyCards">
                                 <v-card-media src="/doug-chey-river-sm.jpg"
                                               class="icon-img-circle"
                                               :class="{'small': $vuetify.breakpoint.xsOnly}"
@@ -36,9 +38,10 @@
                 </v-flex>
                 <v-flex d-flex xs5 sm3>
                     <v-card flat tile
-                            class="text-sm-center icon-card grey--text">
+                            class="text-sm-center icon-card grey--text"
+                            :class="{'active': cardsInView === AboutDogsCards}">
                         <v-layout column align-center>
-                            <div class="icon-card-body">
+                            <div class="icon-card-body" v-on:click="cardsInView = AboutDogsCards">
                                 <v-card-media src="/all-dogs.png"
                                               class="icon-img-circle"
                                               :class="{'small': $vuetify.breakpoint.xsOnly}"
@@ -51,9 +54,10 @@
                 </v-flex>
                 <v-flex d-flex xs5 sm3>
                     <v-card flat tile
-                            class="text-sm-center icon-card grey--text">
+                            class="text-sm-center icon-card grey--text"
+                            :class="{'active': cardsInView === AboutFunCards}">
                         <v-layout column align-center>
-                            <div class="icon-card-body">
+                            <div class="icon-card-body" v-on:click="cardsInView = AboutFunCards">
                                 <v-card-media src="/star-wars-controller.jpg"
                                               class="icon-img-circle"
                                               :class="{'small': $vuetify.breakpoint.xsOnly}"
