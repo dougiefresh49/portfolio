@@ -7,9 +7,9 @@
                 <v-flex d-flex xs5 sm3>
                     <v-card flat tile
                             class="text-sm-center icon-card grey--text"
-                            :class="{'active': cardsInView === AboutMeCards}">
+                            :class="{'active': clustersInView === AboutMeClusters}">
                         <v-layout column align-center>
-                            <div class="icon-card-body" v-on:click="cardsInView = AboutMeCards">
+                            <div class="icon-card-body" v-on:click="clustersInView = AboutMeClusters">
                                 <v-card-media src="/doug-snow.JPG"
                                               class="icon-img-circle"
                                               :class="{'small': $vuetify.breakpoint.xsOnly}"
@@ -23,9 +23,9 @@
                 <v-flex d-flex xs5 sm3>
                     <v-card flat tile
                             class="text-sm-center icon-card grey--text"
-                            :class="{'active': cardsInView === AboutFamilyCards}">
+                            :class="{'active': clustersInView === AboutFamilyClusters}">
                         <v-layout column align-center>
-                            <div class="icon-card-body" v-on:click="cardsInView = AboutFamilyCards">
+                            <div class="icon-card-body" v-on:click="clustersInView = AboutFamilyClusters">
                                 <v-card-media src="/doug-chey-river-sm.jpg"
                                               class="icon-img-circle"
                                               :class="{'small': $vuetify.breakpoint.xsOnly}"
@@ -39,9 +39,9 @@
                 <v-flex d-flex xs5 sm3>
                     <v-card flat tile
                             class="text-sm-center icon-card grey--text"
-                            :class="{'active': cardsInView === AboutDogsCards}">
+                            :class="{'active': clustersInView === AboutDogsCards}">
                         <v-layout column align-center>
-                            <div class="icon-card-body" v-on:click="cardsInView = AboutDogsCards">
+                            <div class="icon-card-body" v-on:click="clustersInView = AboutDogsCards">
                                 <v-card-media src="/all-dogs.png"
                                               class="icon-img-circle"
                                               :class="{'small': $vuetify.breakpoint.xsOnly}"
@@ -55,9 +55,9 @@
                 <v-flex d-flex xs5 sm3>
                     <v-card flat tile
                             class="text-sm-center icon-card grey--text"
-                            :class="{'active': cardsInView === AboutFunCards}">
+                            :class="{'active': clustersInView === AboutFunCards}">
                         <v-layout column align-center>
-                            <div class="icon-card-body" v-on:click="cardsInView = AboutFunCards">
+                            <div class="icon-card-body" v-on:click="clustersInView = AboutFunCards">
                                 <v-card-media src="/star-wars-controller.jpg"
                                               class="icon-img-circle"
                                               :class="{'small': $vuetify.breakpoint.xsOnly}"
@@ -70,7 +70,10 @@
                 </v-flex>
             </v-layout>
         </v-container>
-        <info-card-cluster :cards="cardsInView"></info-card-cluster>
+        <card-cluster v-for="(cluster, idx) in clustersInView" :key="cluster.textCard.title"
+                      :cluster="cluster"
+                      :index="idx">
+        </card-cluster>
     </div>
 </template>
 <style scoped>
@@ -104,23 +107,24 @@
 </style>
 <script>
   import CardBanner from '~/components/card-banner.vue'
-  import InfoCard from '~/components/info-card.vue'
-  import InfoCardCluster from '~/components/info-card-cluster.vue'
-  import {AboutMeCards, AboutFamilyCards, AboutDogsCards, AboutFunCards} from './about-data'
+  import InfoCard from '~/components/detailed-card.vue'
+  import CardCluster from '~/components/card-cluster.vue'
+  import {AboutMeClusters, AboutFamilyClusters, AboutDogsCards, AboutFunCards} from './data'
   export default {
     components: {
       CardBanner,
       InfoCard,
-      InfoCardCluster
+      CardCluster
     },
     data () {
-      let cardsInView = AboutMeCards
+      // let clustersInView = AboutMeClusters
+      let clustersInView = AboutFamilyClusters
       return {
-        AboutMeCards,
-        AboutFamilyCards,
+        AboutMeClusters,
+        AboutFamilyClusters,
         AboutDogsCards,
         AboutFunCards,
-        cardsInView
+        clustersInView
       }
     }
   }
