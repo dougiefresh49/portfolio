@@ -17,6 +17,7 @@ const aboutMarriedLife = {
     ]
   }
 }
+
 const aboutDadLife = {
   banner: {
     img: '/emma-wubbanub.jpg'

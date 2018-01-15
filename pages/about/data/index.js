@@ -1,4 +1,4 @@
 export * from './about-me-data'
 export * from './about-family-data'
-export const AboutDogsCards = []
+export * from './about-dogs-data'
 export const AboutFunCards = []
