@@ -7,9 +7,9 @@
                 <v-flex d-flex xs5 sm3 offset-xs1 offset-sm3>
                     <v-card flat tile
                             class="text-sm-center icon-card grey--text"
-                            :class="{'active': projectsInView === FidelityProjects}">
+                            :class="{'active': clustersInView === FidelityProjectClusters}">
                         <v-layout column align-center>
-                            <div class="icon-card-body" v-on:click="projectsInView = FidelityProjects">
+                            <div class="icon-card-body" v-on:click="clustersInView = FidelityProjectClusters">
                                 <v-card-media src="/fid-logo.jpeg"
                                               class="icon-img"
                                               :class="{'small': $vuetify.breakpoint.xsOnly}"
@@ -23,9 +23,9 @@
                 <v-flex d-flex xs5 sm3 offset-sm1 offset-xs1>
                     <v-card flat tile
                             class="text-sm-center icon-card grey--text"
-                            :class="{'active': projectsInView === FreelanceProjects}">
+                            :class="{'active': clustersInView === FreelanceProjectClusters}">
                         <v-layout column align-center>
-                            <div class="icon-card-body" v-on:click="projectsInView = FreelanceProjects">
+                            <div class="icon-card-body" v-on:click="clustersInView = FreelanceProjectClusters">
                                 <div class="blue-grey darken-3 icon-img-circle align-center"
                                      :class="{'small': $vuetify.breakpoint.xsOnly}">
                                     <h2 v-if="!$vuetify.breakpoint.xsOnly" class="white--text mb-0 pa-4">DF</h2>
@@ -38,7 +38,10 @@
                 </v-flex>
             </v-layout>
         </v-container>
-        <info-card-cluster :cards="projectsInView"></info-card-cluster>
+        <card-cluster v-for="(cluster, idx) in clustersInView" :key="cluster.textCard.title"
+                      :cluster="cluster"
+                      :index="idx">
+        </card-cluster>
         <v-container fluid grid-list-xl class="bkg-white">
             <v-layout row wrap>
                 <v-flex d-flex xs12>
@@ -79,21 +82,21 @@
     }
 </style>
 <script>
-  import InfoCardCluster from '~/components/info-card-cluster'
-  import {FidelityProjects, FreelanceProjects} from './projects-data'
+  import CardCluster from '~/components/card-cluster'
+  import {FidelityProjectClusters, FreelanceProjectClusters} from './projects-data'
 
   export default {
     data () {
-      let projectsInView = FidelityProjects
+      let clustersInView = FidelityProjectClusters
 
       return {
-        FidelityProjects,
-        FreelanceProjects,
-        projectsInView
+        FidelityProjectClusters,
+        FreelanceProjectClusters,
+        clustersInView
       }
     },
     components: {
-      InfoCardCluster
+      CardCluster
     }
   }
 </script>
