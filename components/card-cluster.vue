@@ -1,73 +1,62 @@
 <template>
-    <div>
-        <div v-for="(card, index) in cards" :key="card.title">
-            <card-banner v-if="card.banner"
-                         :img="card.banner.img"
-                         :height="card.banner.height"
-                         :text="card.banner.text"
-                         :text-color="card.banner.textColor">
-            </card-banner>
-            <v-container fluid grid-list-xl class="bkg-white">
-                <v-layout row wrap>
-                    <v-flex d-flex xs12 sm6 v-if="card.images && doShowImageFirst(index)">
-                        <v-layout column>
-                            <v-flex d-flex v-for="img in card.images" :key="img">
-                                <v-card :img="img" flat tile :height="getImageHeight(img)"></v-card>
-                            </v-flex>
-                        </v-layout>
-                    </v-flex>
-                    <v-flex d-flex xs12 sm6>
-                        <info-card :title="card.title"
-                                   :desc="card.desc"
-                                   :details="card.details"
-                                   :icons="card.icons"
-                                   :readMore="card.readMore"
-                                   :btn="card.button">
-                        </info-card>
-                    </v-flex>
-                    <v-flex d-flex xs12 sm6 v-if="card.images && doShowImageSecond(index)">
-                        <v-layout column>
-                            <v-flex d-flex v-for="img in card.images" :key="img">
-                                <v-card :img="img" flat tile :height="getImageHeight(img)"></v-card>
-                            </v-flex>
-                        </v-layout>
-                    </v-flex>
-                </v-layout>
-            </v-container>
-        </div>
+    <div v-if="cluster">
+        <card-banner v-if="cluster.banner"
+                     :img="cluster.banner.img"
+                     :height="cluster.banner.height"
+                     :text="cluster.banner.text"
+                     :text-color="cluster.banner.textColor">
+        </card-banner>
+        <v-container fluid grid-list-xl class="bkg-white">
+            <v-layout row wrap>
+                <v-flex d-flex xs12 sm6 v-if="cluster.imageCards && doShowImageFirst(index)">
+                    <card-column v-if="cluster.imageCards.type === 'column'" :cards="cluster.imageCards.images"></card-column>
+                    <card-stack v-else-if="cluster.imageCards.type === 'stack'" :cards="cluster.imageCards.images"></card-stack>
+                </v-flex>
+                <v-flex d-flex xs12 sm6 v-if="cluster.textCard">
+                    <card-banner v-if="cluster.textCard.type === 'banner'"
+                                 :height="cluster.textCard.height"
+                                 :title="cluster.textCard.title"
+                                 :desc="cluster.textCard.desc"
+                                 text-color="grey--text text--darken-1">
+                    </card-banner>
+                    <detailed-card v-if="cluster.textCard.type === 'detailed'"
+                                   :title="cluster.textCard.title"
+                                   :desc="cluster.textCard.desc"
+                                   :details="cluster.textCard.details"
+                                   :icons="cluster.textCard.icons"
+                                   :readMore="cluster.textCard.readMore"
+                                   :btn="cluster.textCard.button">
+                    </detailed-card>
+                </v-flex>
+                <v-flex d-flex xs12 sm6 v-if="cluster.imageCards && doShowImageSecond(index)">
+                    <card-column v-if="cluster.imageCards.type === 'column'" :cards="cluster.imageCards.images"></card-column>
+                    <card-stack v-else-if="cluster.imageCards.type === 'stack'" :cards="cluster.imageCards.images"></card-stack>
+                </v-flex>
+            </v-layout>
+        </v-container>
     </div>
 </template>
 <script>
   import CardBanner from '~/components/card-banner.vue'
   import FloatingIcon from '~/components/floating-icon.vue'
-  import InfoCard from '~/components/detailed-card.vue'
+  import DetailedCard from '~/components/detailed-card.vue'
+  import CardStack from '~/components/card-stack.vue'
+  import CardColumn from '~/components/card-column.vue'
+
   export default {
+    name: 'card-cluster',
     props: {
-      cards: {
-        type: Array,
-        default: []
-      }
+      cluster: Object,
+      index: Number
     },
     components: {
       CardBanner,
-      FloatingIcon,
-      InfoCard
+      CardColumn,
+      CardStack,
+      DetailedCard,
+      FloatingIcon
     },
     methods: {
-      getImageHeight (cardImg) {
-        if (!cardImg) {
-          return 'auto'
-        }
-        switch (this.$vuetify.breakpoint.name) {
-          case 'xs':
-            return '500px'
-          case 'sm':
-          case 'md':
-          case 'lg':
-          case 'xl':
-            return 'auto'
-        }
-      },
       doShowImageFirst (idx) {
         return (idx % 2 === 0 || this.$vuetify.breakpoint.name === 'xs')
       },
