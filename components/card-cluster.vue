@@ -40,7 +40,7 @@
 <script>
   import CardBanner from '~/components/card-banner.vue'
   import FloatingIcon from '~/components/floating-icon.vue'
-  import InfoCard from '~/components/info-card.vue'
+  import InfoCard from '~/components/detailed-card.vue'
   export default {
     props: {
       cards: {

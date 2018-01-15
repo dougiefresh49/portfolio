@@ -1,11 +1,12 @@
 <template>
     <v-layout row wrap>
         <v-flex d-flex xs12>
-            <v-card :img="img" flat tile :height="height">
+            <v-card :img="img" color="grey lighten-5" flat tile :height="height">
                 <v-container fill-height>
                     <v-layout row wrap align-center>
                         <v-flex class="text-xs-center">
-                            <span class="display-1 white--text section-banner--text" :class="textColor">{{ text }}</span>
+                            <h3 :class="titleColor">{{ title }}</h3>
+                            <h6 :class="descColor">{{ desc }}</h6>
                         </v-flex>
                     </v-layout>
                 </v-container>
@@ -17,16 +18,22 @@
 </style>
 <script>
     export default {
+      name: 'card-banner',
       props: {
         img: String,
         height: {
           type: String,
           default: '400'
         },
-        text: String,
-        textColor: {
+        title: String,
+        titleColor: {
           type: String,
-          default: 'white--text'
+          default: 'grey--text text--darken-1'
+        },
+        desc: String,
+        descColor: {
+          type: String,
+          default: 'grey--text'
         }
       }
     }
