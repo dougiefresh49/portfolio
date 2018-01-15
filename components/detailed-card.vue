@@ -2,9 +2,7 @@
     <v-card color="grey lighten-5" flat tile>
         <v-layout column align-center justify-center class="text-xs-center pa-xl">
             <h3 class="grey--text text--darken-1">{{ title }}</h3>
-            <h6 class="grey--text">
-                {{ desc }}
-                </h6>
+            <h6 class="grey--text">{{ desc }}</h6>
             <v-divider class="divider--small"></v-divider>
             <div v-if="details" v-for="detail in details" :key="detail.subtitle">
                 <h5 class="grey--text text--darken-1 mt-4">{{ detail.subtitle }}</h5>
@@ -45,7 +43,7 @@
 <script>
     import FloatingIcon from '~/components/floating-icon.vue'
     export default {
-      name: 'info-card',
+      name: 'detailed-card',
       props: {
         color: {
           type: String,
