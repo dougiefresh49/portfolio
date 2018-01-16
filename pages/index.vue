@@ -1,13 +1,9 @@
 <template>
 <div>
-  <v-parallax :src="parallaxSrc()">
-    <v-layout column align-center>
-      <v-flex d-flex>
-        <h3 class="grey--text">Dream big. Code with friends.</h3>
-      </v-flex>
-    </v-layout>
+  <v-parallax :src="parallaxSrc()" :height="getParallaxHeight()">
   </v-parallax>
   <v-container fluid grid-list-lg>
+    <card-banner desc="dougiefresh designs" title="Dream Big. Code With Friends." height="200"></card-banner>
     <v-layout row wrap>
       <!-- Left column -->
       <v-flex d-flex xs12 sm6>
@@ -95,10 +91,17 @@
 }
 </style>
 <script>
+  import CardBanner from '~/components/card-banner.vue'
   export default {
+    components: {
+      CardBanner
+    },
     methods: {
       parallaxSrc () {
         return this.$vuetify.breakpoint.name === 'xs' ? '/doug-and-odin-codin-xs.png' : '/doug-and-odin-codin.png'
+      },
+      getParallaxHeight () {
+        return this.$vuetify.breakpoint.name === 'xs' ? 500 : 772
       }
     }
   }

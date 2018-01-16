@@ -1,7 +1,7 @@
 <template>
     <v-layout row wrap>
         <v-flex d-flex xs12>
-            <v-card :img="img" color="grey lighten-5" flat tile :height="height">
+            <v-card :img="img" :color="color" flat tile :height="height">
                 <v-container fill-height>
                     <v-layout row wrap align-center>
                         <v-flex class="text-xs-center">
@@ -33,6 +33,10 @@
         height: {
           type: String,
           default: '400'
+        },
+        color: {
+          type: String,
+          default: 'grey lighten-5'
         },
         icons: Array,
         title: String,
