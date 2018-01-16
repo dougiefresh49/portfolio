@@ -17,11 +17,11 @@ const MarginImpactProject = {
       {img: '/tech-icons/nodejs-icon.svg', href: 'https://nodejs.org/'},
       {img: '/tech-icons/sass.svg', padding: 'pl-1', href: 'http://sass-lang.com/'},
       {img: '/tech-icons/gulp.svg', padding: 'pl-2', href: 'https://gulpjs.com/'}
-    ],
-    button: {
-      href: 'https://brokerage.fidelity.com/ftgw/brkg/watchlist/',
-      text: 'View'
-    }
+    ]
+    // button: {
+    // href: 'https://brokerage.fidelity.com/ftgw/brkg/watchlist/',
+    // text: 'View'
+    // }
   },
   imageCards: {
     type: 'column',
@@ -142,7 +142,7 @@ const GfwkProject = {
       {img: '/tech-icons/gulp.svg', padding: 'pl-2', href: 'https://gulpjs.com/'}
     ],
     button: {
-      href: 'http://www.getfitwithkimtoday.com/#/',
+      href: 'https://gfwk-production.herokuapp.com/#/',
       text: 'View'
     }
   },

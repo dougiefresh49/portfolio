@@ -66,7 +66,10 @@ const aboutWork = {
         ]
       }
     ],
-    readMore: '/resume'
+    button: {
+      href: '/resume',
+      text: 'Full Resume'
+    }
   },
   imageCards: {
     type: 'column',
