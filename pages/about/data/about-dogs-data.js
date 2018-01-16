@@ -32,6 +32,7 @@ const aboutJack = {
       '/jack-troopers.jpg',
       '/jack-closeup.jpg',
       '/jack-papa.png',
+      '/jack-eat-yo-face.jpg',
       '/jack-emma.jpg'
     ]
   }
