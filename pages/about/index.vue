@@ -55,9 +55,9 @@
                 <v-flex d-flex xs5 sm3>
                     <v-card flat tile
                             class="text-sm-center icon-card grey--text"
-                            :class="{'active': clustersInView === AboutFunCards}">
+                            :class="{'active': clustersInView === AboutFunClusters}">
                         <v-layout column align-center>
-                            <div class="icon-card-body" v-on:click="clustersInView = AboutFunCards">
+                            <div class="icon-card-body" v-on:click="clustersInView = AboutFunClusters">
                                 <v-card-media src="/star-wars-controller.jpg"
                                               class="icon-img-circle"
                                               :class="{'small': $vuetify.breakpoint.xsOnly}"
@@ -109,7 +109,7 @@
   import CardBanner from '~/components/card-banner.vue'
   import InfoCard from '~/components/detailed-card.vue'
   import CardCluster from '~/components/card-cluster.vue'
-  import {AboutMeClusters, AboutFamilyClusters, AboutDogsClusters, AboutFunCards} from './data'
+  import {AboutMeClusters, AboutFamilyClusters, AboutDogsClusters, AboutFunClusters} from './data'
   export default {
     components: {
       CardBanner,
@@ -117,14 +117,13 @@
       CardCluster
     },
     data () {
-      // let clustersInView = AboutMeClusters
-      let clustersInView = AboutDogsClusters
+      let clustersInView = AboutMeClusters
 
       return {
         AboutMeClusters,
         AboutFamilyClusters,
         AboutDogsClusters,
-        AboutFunCards,
+        AboutFunClusters,
         clustersInView
       }
     }
