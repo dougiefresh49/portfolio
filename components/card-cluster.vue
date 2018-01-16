@@ -3,8 +3,7 @@
         <card-banner v-if="cluster.banner"
                      :img="cluster.banner.img"
                      :height="cluster.banner.height"
-                     :text="cluster.banner.text"
-                     :text-color="cluster.banner.textColor">
+                     :title="cluster.banner.text">
         </card-banner>
         <v-container fluid grid-list-xl class="bkg-white">
             <v-layout row wrap>
