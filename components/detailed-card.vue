@@ -16,12 +16,13 @@
                 Read More
             </nuxt-link>
             <v-divider class="divider--small"></v-divider>
-            <v-layout row class="mt-4" v-if="icons">
-                <floating-icon v-for="icon in icons" :key="icon.img"
-                               :img="icon.img"
-                               :padding="icon.padding"
-                               :href="icon.href">
-                </floating-icon>
+            <v-layout row class="mt-4 text-xs-center" align-center v-if="icons">
+                <v-flex xs3 v-for="icon in icons" :key="icon.img">
+                    <floating-icon :img="icon.img"
+                                   :padding="icon.padding"
+                                   :href="icon.href">
+                    </floating-icon>
+                </v-flex>
             </v-layout>
             <v-btn v-if="btn" outline color="grey darken-1" class="mt-4"
                    target="_blank"

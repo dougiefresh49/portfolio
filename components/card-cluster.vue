@@ -17,7 +17,7 @@
                                  :height="cluster.textCard.height"
                                  :title="cluster.textCard.title"
                                  :desc="cluster.textCard.desc"
-                                 text-color="grey--text text--darken-1">
+                                 :icons="cluster.textCard.icons">
                     </card-banner>
                     <detailed-card v-if="cluster.textCard.type === 'detailed'"
                                    :title="cluster.textCard.title"

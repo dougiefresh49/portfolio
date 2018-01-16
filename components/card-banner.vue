@@ -5,6 +5,14 @@
                 <v-container fill-height>
                     <v-layout row wrap align-center>
                         <v-flex class="text-xs-center">
+                            <v-layout row wrap v-if="icons">
+                                <v-flex xs2 v-for="icon in icons" :key="icon.img">
+                                    <floating-icon :img="icon.img"
+                                                   :padding="icon.padding"
+                                                   :href="icon.href">
+                                    </floating-icon>
+                                </v-flex>
+                            </v-layout>
                             <h3 :class="titleColor">{{ title }}</h3>
                             <h6 :class="descColor">{{ desc }}</h6>
                         </v-flex>
@@ -17,6 +25,7 @@
 <style scoped>
 </style>
 <script>
+    import FloatingIcon from '~/components/floating-icon.vue'
     export default {
       name: 'card-banner',
       props: {
@@ -25,6 +34,7 @@
           type: String,
           default: '400'
         },
+        icons: Array,
         title: String,
         titleColor: {
           type: String,
@@ -35,6 +45,9 @@
           type: String,
           default: 'grey--text'
         }
+      },
+      components: {
+        FloatingIcon
       }
     }
 </script>
