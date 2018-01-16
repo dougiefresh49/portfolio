@@ -10,7 +10,7 @@
                 </card-banner>
                 <v-btn outline color="grey darken-1" class="mb-5"
                        target="_blank"
-                       href="/odin-onesie.JPG">View Resume</v-btn>
+                       href="/resume.pdf">View Resume</v-btn>
             </v-layout>
         </v-container>
     </div>
