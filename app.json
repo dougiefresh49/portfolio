@@ -8,6 +8,9 @@
     },
     "NPM_CONFIG_PRODUCTION": {
       "required": true
+    },
+    "HOST": {
+      "required": true
     }
   },
   "formation": { },
