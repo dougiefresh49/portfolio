@@ -11,7 +11,7 @@
 
           <!-- About -->
           <v-flex d-flex>
-            <v-card img="/about-dt-lg.jpeg" flat tile height="800px" class="white--text">
+            <v-card img="/home/chey-doug-bridge.jpeg" flat tile height="800px" class="white--text">
               <v-card-title primary-title>
                 <span class="headline">About Me</span>
                 <v-spacer></v-spacer>
@@ -27,7 +27,7 @@
 
           <!-- Open Source -->
           <v-flex d-flex>
-            <v-card img="/lego-avengers.jpg" flat tile height="600px" class="white--text">
+            <v-card img="/shared/lego-avengers.jpg" flat tile height="600px" class="white--text">
               <v-card-title primary-title>
                 <span class="headline">Open Source</span>
                 <v-spacer></v-spacer>
@@ -45,7 +45,7 @@
 
           <!-- Portfolio -->
           <v-flex d-flex>
-            <v-card img="/coffee-and-code-copy.jpeg" flat tile height="600px" class="white--text">
+            <v-card img="/home/coffee-and-code.jpeg" flat tile height="600px" class="white--text">
               <v-card-title primary-title>
                 <span class="headline">Portfolio</span>
                 <v-spacer></v-spacer>
@@ -56,7 +56,7 @@
 
           <!-- Resume -->
           <v-flex d-flex>
-            <v-card img="/odin-codin.jpg" flat tile height="800px" class="white--text">
+            <v-card img="/home/odin-codin.jpg" flat tile height="800px" class="white--text">
               <v-card-title primary-title>
                 <span class="headline">Resume</span>
                 <v-spacer></v-spacer>
@@ -98,7 +98,7 @@
     },
     methods: {
       parallaxSrc () {
-        return this.$vuetify.breakpoint.name === 'xs' ? '/doug-and-odin-codin-xs.png' : '/doug-and-odin-codin.png'
+        return this.$vuetify.breakpoint.name === 'xs' ? '/home/doug-and-odin-codin-xs.png' : '/home/doug-and-odin-codin.png'
       },
       getParallaxHeight () {
         return this.$vuetify.breakpoint.name === 'xs' ? 500 : 772
