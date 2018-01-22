@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-parallax src="/odin-napping-on-the-job.png"></v-parallax>
+        <v-parallax src="/portfolio/odin-napping-on-the-job.png"></v-parallax>
         <!-- Icon Selectors -->
         <v-container fluid grid-list-xl class="bkg-white">
             <v-layout row wrap>
@@ -10,7 +10,7 @@
                             :class="{'active': clustersInView === FidelityProjectClusters}">
                         <v-layout column align-center>
                             <div class="icon-card-body" v-on:click="clustersInView = FidelityProjectClusters">
-                                <v-card-media src="/fid-logo.jpeg"
+                                <v-card-media src="/portfolio/fid-logo.jpeg"
                                               class="icon-img"
                                               :class="{'small': $vuetify.breakpoint.xsOnly}"
                                               :height="($vuetify.breakpoint.xsOnly) ? '60px' : '120px'">
@@ -43,6 +43,7 @@
                       :index="idx">
         </card-cluster>
         <v-container fluid grid-list-xl class="bkg-white">
+            <!--TODO: (refactor) use card banner for this -->
             <v-layout row wrap>
                 <v-flex d-flex xs12>
                     <v-card flat tile class="text-sm-center pa-5">

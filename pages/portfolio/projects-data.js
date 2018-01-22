@@ -13,10 +13,10 @@ const MarginImpactProject = {
     }],
     readMore: '/resume',
     icons: [
-      {img: '/tech-icons/angular-icon.svg', href: 'https://angularjs.org/'},
-      {img: '/tech-icons/nodejs-icon.svg', href: 'https://nodejs.org/'},
-      {img: '/tech-icons/sass.svg', padding: 'pl-1', href: 'http://sass-lang.com/'},
-      {img: '/tech-icons/gulp.svg', padding: 'pl-2', href: 'https://gulpjs.com/'}
+      {img: '/portfolio/tech-icons/angular-icon.svg', href: 'https://angularjs.org/'},
+      {img: '/portfolio/tech-icons/nodejs-icon.svg', href: 'https://nodejs.org/'},
+      {img: '/portfolio/tech-icons/sass.svg', padding: 'pl-1', href: 'http://sass-lang.com/'},
+      {img: '/portfolio/tech-icons/gulp.svg', padding: 'pl-2', href: 'https://gulpjs.com/'}
     ]
     // button: {
     // href: 'https://brokerage.fidelity.com/ftgw/brkg/watchlist/',
@@ -25,7 +25,7 @@ const MarginImpactProject = {
   },
   imageCards: {
     type: 'column',
-    images: ['/jack-trade-ticket.jpg']
+    images: ['/portfolio/jack-trade-ticket.jpg']
   }
 }
 
@@ -44,10 +44,10 @@ const WatchlistProject = {
     }],
     readMore: '/resume',
     icons: [
-      {img: '/tech-icons/angular-icon.svg', href: 'https://angularjs.org/'},
-      {img: '/tech-icons/nodejs-icon.svg', href: 'https://nodejs.org/'},
-      {img: '/tech-icons/reactivex.svg', href: 'http://reactivex.io/'},
-      {img: '/tech-icons/gulp.svg', padding: 'pl-2', href: 'https://gulpjs.com/'}
+      {img: '/portfolio/tech-icons/angular-icon.svg', href: 'https://angularjs.org/'},
+      {img: '/portfolio/tech-icons/nodejs-icon.svg', href: 'https://nodejs.org/'},
+      {img: '/portfolio/tech-icons/reactivex.svg', href: 'http://reactivex.io/'},
+      {img: '/portfolio/tech-icons/gulp.svg', padding: 'pl-2', href: 'https://gulpjs.com/'}
     ],
     button: {
       href: 'https://brokerage.fidelity.com/ftgw/brkg/watchlist/',
@@ -56,7 +56,7 @@ const WatchlistProject = {
   },
   imageCards: {
     type: 'column',
-    images: ['/odin-watchlist.png']
+    images: ['/portfolio/odin-watchlist.png']
   }
 }
 
@@ -75,10 +75,10 @@ const TradeTicketProject = {
     }],
     readMore: '/resume',
     icons: [
-      {img: '/tech-icons/backbone-icon.svg', padding: 'pl-1', href: 'http://backbonejs.org/'},
-      {img: '/tech-icons/nodejs-icon.svg', href: 'https://nodejs.org/'},
-      {img: '/tech-icons/sass.svg', padding: 'pl-1', href: 'http://sass-lang.com/'},
-      {img: '/tech-icons/grunt.svg', padding: 'pl-1', href: 'https://gruntjs.com/'}
+      {img: '/portfolio/tech-icons/backbone-icon.svg', padding: 'pl-1', href: 'http://backbonejs.org/'},
+      {img: '/portfolio/tech-icons/nodejs-icon.svg', href: 'https://nodejs.org/'},
+      {img: '/portfolio/tech-icons/sass.svg', padding: 'pl-1', href: 'http://sass-lang.com/'},
+      {img: '/portfolio/tech-icons/grunt.svg', padding: 'pl-1', href: 'https://gruntjs.com/'}
     ],
     button: {
       href: 'https://brokerage.fidelity.com/ftgw/brkg/watchlist/',
@@ -87,7 +87,7 @@ const TradeTicketProject = {
   },
   imageCards: {
     type: 'column',
-    images: ['/loki-computer.png']
+    images: ['/portfolio/loki-computer.png']
   }
 }
 
@@ -105,10 +105,10 @@ const EmilyJeanProject = {
       ]
     }],
     icons: [
-      {img: '/tech-icons/javascript.svg'},
-      {img: '/tech-icons/nodejs-icon.svg', href: 'https://nodejs.org/'},
-      {img: '/tech-icons/bootstrap.svg', href: 'https://getbootstrap.com/'},
-      {img: '/tech-icons/heroku.svg', padding: 'pl-1', href: 'https://www.heroku.com/'}
+      {img: '/portfolio/tech-icons/javascript.svg'},
+      {img: '/portfolio/tech-icons/nodejs-icon.svg', href: 'https://nodejs.org/'},
+      {img: '/portfolio/tech-icons/bootstrap.svg', href: 'https://getbootstrap.com/'},
+      {img: '/portfolio/tech-icons/heroku.svg', padding: 'pl-1', href: 'https://www.heroku.com/'}
     ],
     button: {
       href: 'https://brokerage.fidelity.com/ftgw/brkg/watchlist/',
@@ -117,7 +117,7 @@ const EmilyJeanProject = {
   },
   imageCards: {
     type: 'column',
-    images: ['/odin-watchlist.png']
+    images: ['/portfolio/odin-watchlist.png']
   }
 }
 
@@ -136,10 +136,10 @@ const GfwkProject = {
     }],
     readMore: '/resume',
     icons: [
-      {img: '/tech-icons/angular-icon.svg', href: 'https://angularjs.org/'},
-      {img: '/tech-icons/nodejs-icon.svg', href: 'https://nodejs.org/'},
-      {img: '/tech-icons/parse.svg', href: 'http://parseplatform.org/'},
-      {img: '/tech-icons/gulp.svg', padding: 'pl-2', href: 'https://gulpjs.com/'}
+      {img: '/portfolio/tech-icons/angular-icon.svg', href: 'https://angularjs.org/'},
+      {img: '/portfolio/tech-icons/nodejs-icon.svg', href: 'https://nodejs.org/'},
+      {img: '/portfolio/tech-icons/parse.svg', href: 'http://parseplatform.org/'},
+      {img: '/portfolio/tech-icons/gulp.svg', padding: 'pl-2', href: 'https://gulpjs.com/'}
     ],
     button: {
       href: 'https://gfwk-production.herokuapp.com/#/',
@@ -148,7 +148,7 @@ const GfwkProject = {
   },
   imageCards: {
     type: 'column',
-    images: ['/jack-trade-ticket.jpg']
+    images: ['/portfolio/jack-trade-ticket.jpg']
   }
 }
 
@@ -168,9 +168,9 @@ const RapidRosterProject = {
     }],
     readMore: '/resume',
     icons: [
-      {img: '/tech-icons/apple.svg'},
-      {img: '/tech-icons/swift.svg', href: 'https://developer.apple.com/swift/'},
-      {img: '/tech-icons/parse.svg', href: 'http://parseplatform.org/'}
+      {img: '/portfolio/tech-icons/apple.svg'},
+      {img: '/portfolio/tech-icons/swift.svg', href: 'https://developer.apple.com/swift/'},
+      {img: '/portfolio/tech-icons/parse.svg', href: 'http://parseplatform.org/'}
     ],
     button: {
       href: 'https://itunes.apple.com/us/app/rapidroster-college-football/id1028810756?mt=8',
@@ -179,7 +179,7 @@ const RapidRosterProject = {
   },
   imageCards: {
     type: 'column',
-    images: ['/loki-computer.png']
+    images: ['/portfolio/loki-computer.png']
   }
 }
 
