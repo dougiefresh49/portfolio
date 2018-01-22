@@ -8,13 +8,13 @@ const aboutOdin = {
   imageCards: {
     type: 'stack',
     images: [
-      '/odin-couch.jpg',
-      '/odin-doug-chey.jpg',
-      '/odin-cabinet.JPG',
-      '/odin-my-bed.PNG',
-      '/odin-onesie.JPG',
-      '/odin-doug-napping.JPG',
-      '/odin-doug-sleep.jpg'
+      '/about/dogs/odin-couch.jpg',
+      '/about/dogs/odin-doug-chey.jpg',
+      '/about/dogs/odin-cabinet.JPG',
+      '/about/dogs/odin-my-bed.PNG',
+      '/about/dogs/odin-onesie.JPG',
+      '/about/dogs/odin-doug-napping.JPG',
+      '/about/dogs/odin-doug-sleep.jpg'
     ]
   }
 }
@@ -28,12 +28,12 @@ const aboutJack = {
   imageCards: {
     type: 'stack',
     images: [
-      '/jack-terror.jpeg',
-      '/jack-troopers.jpg',
-      '/jack-closeup.jpg',
-      '/jack-papa.png',
-      '/jack-eat-yo-face.jpg',
-      '/jack-emma.jpg'
+      '/about/dogs/jack-terror.jpeg',
+      '/about/dogs/jack-troopers.jpg',
+      '/about/dogs/jack-closeup.jpg',
+      '/about/dogs/jack-papa.png',
+      '/about/dogs/jack-eat-yo-face.jpg',
+      '/about/dogs/jack-emma.jpg'
     ]
   }
 }
@@ -47,11 +47,11 @@ const aboutLoki = {
   imageCards: {
     type: 'stack',
     images: [
-      '/loki-covers.jpg',
-      '/loki-sleep.jpg',
-      '/loki-squirrel.JPG',
-      '/loki-ball.JPG',
-      '/loki-odin-sleep.jpg'
+      '/about/dogs/loki-covers.jpg',
+      '/about/dogs/loki-sleep.jpg',
+      '/about/dogs/loki-squirrel.JPG',
+      '/about/dogs/loki-ball.JPG',
+      '/about/dogs/loki-odin-sleep.jpg'
     ]
   }
 }

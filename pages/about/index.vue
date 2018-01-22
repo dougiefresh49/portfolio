@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-parallax class="mt-5" src="/loki-doorway-copy.jpg"></v-parallax>
+        <v-parallax class="mt-5" src="/about/loki-doorway.jpg"></v-parallax>
         <v-container fluid grid-list-xl class="bkg-white">
             <!-- Icons -->
             <v-layout row>
@@ -10,7 +10,7 @@
                             :class="{'active': clustersInView === AboutMeClusters}">
                         <v-layout column align-center>
                             <div class="icon-card-body" v-on:click="clustersInView = AboutMeClusters">
-                                <v-card-media src="/doug-snow.JPG"
+                                <v-card-media src="/about/doug-snow.JPG"
                                               class="icon-img-circle"
                                               :class="{'small': $vuetify.breakpoint.xsOnly}"
                                               :height="($vuetify.breakpoint.xsOnly) ? '60px' : '120px'">
@@ -26,7 +26,7 @@
                             :class="{'active': clustersInView === AboutFamilyClusters}">
                         <v-layout column align-center>
                             <div class="icon-card-body" v-on:click="clustersInView = AboutFamilyClusters">
-                                <v-card-media src="/doug-chey-river-sm.jpg"
+                                <v-card-media src="/about/doug-chey-river-sm.jpg"
                                               class="icon-img-circle"
                                               :class="{'small': $vuetify.breakpoint.xsOnly}"
                                               :height="($vuetify.breakpoint.xsOnly) ? '60px' : '120px'">
@@ -42,7 +42,7 @@
                             :class="{'active': clustersInView === AboutDogsClusters}">
                         <v-layout column align-center>
                             <div class="icon-card-body" v-on:click="clustersInView = AboutDogsClusters">
-                                <v-card-media src="/all-dogs.png"
+                                <v-card-media src="/about/all-dogs.png"
                                               class="icon-img-circle"
                                               :class="{'small': $vuetify.breakpoint.xsOnly}"
                                               :height="($vuetify.breakpoint.xsOnly) ? '60px' : '120px'">
@@ -58,7 +58,7 @@
                             :class="{'active': clustersInView === AboutFunClusters}">
                         <v-layout column align-center>
                             <div class="icon-card-body" v-on:click="clustersInView = AboutFunClusters">
-                                <v-card-media src="/star-wars-controller.jpg"
+                                <v-card-media src="/about/star-wars-controller.jpg"
                                               class="icon-img-circle"
                                               :class="{'small': $vuetify.breakpoint.xsOnly}"
                                               :height="($vuetify.breakpoint.xsOnly) ? '60px' : '120px'">

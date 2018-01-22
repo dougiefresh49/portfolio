@@ -1,6 +1,6 @@
 const aboutTAMU = {
   banner: {
-    img: '/texas-am-stadium.jpg'
+    img: '/about/me/texas-am-stadium.jpg'
   },
   textCard: {
     type: 'detailed',
@@ -32,15 +32,15 @@ const aboutTAMU = {
   imageCards: {
     type: 'column',
     images: [
-      '/aggie-game-with-chey.jpg',
-      '/family-of-aggies.JPG'
+      '/about/me/aggie-game-with-chey.jpg',
+      '/about/me/family-of-aggies.JPG'
     ]
   }
 }
 
 const aboutWork = {
   banner: {
-    img: '/fidelity-yard.png'
+    img: '/about/me/fidelity-yard.png'
   },
   textCard: {
     type: 'detailed',
@@ -74,15 +74,15 @@ const aboutWork = {
   imageCards: {
     type: 'column',
     images: [
-      '/fidelity-friends.jpg',
-      '/fidelity-team-lunch.jpeg'
+      '/about/me/fidelity-friends.jpg',
+      '/about/me/fidelity-team-lunch.jpeg'
     ]
   }
 }
 
 const aboutMe = {
   banner: {
-    img: '/chey-doug-flowers.JPG'
+    img: '/about/me/chey-doug-flowers.JPG'
   },
   textCard: {
     type: 'detailed',
@@ -122,9 +122,9 @@ const aboutMe = {
   imageCards: {
     type: 'column',
     images: [
-      'doug-dogs-cards.jpg',
-      'chey-doug-ride.JPG',
-      'doug-tmnt.jpg'
+      '/about/me/doug-dogs-cards.jpg',
+      '/about/chey-doug-ride.JPG',
+      '/about/me/doug-tmnt.jpg'
     ]
   }
 }

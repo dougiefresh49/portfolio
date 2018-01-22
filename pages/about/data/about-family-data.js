@@ -1,6 +1,6 @@
 const aboutMarriedLife = {
   banner: {
-    img: '/chey-doug-flowers2.JPG'
+    img: '/about/family/chey-doug-flowers2.JPG'
   },
   textCard: {
     type: 'banner',
@@ -11,16 +11,16 @@ const aboutMarriedLife = {
   imageCards: {
     type: 'stack',
     images: [
-      '/chey-doug-nyc.JPG',
-      '/chey-doug-ride.JPG',
-      '/chey-doug-booth.JPG'
+      '/about/chey-doug-nyc.JPG',
+      '/about/chey-doug-ride.JPG',
+      '/about/family/chey-doug-booth.JPG'
     ]
   }
 }
 
 const aboutDadLife = {
   banner: {
-    img: '/emma-wubbanub.jpg'
+    img: '/about/family/emma-wubbanub.jpg'
   },
   textCard: {
     type: 'banner',
@@ -31,16 +31,16 @@ const aboutDadLife = {
   imageCards: {
     type: 'stack',
     images: [
-      '/emma-burrito.jpg',
-      '/doug-emma-gaming.png',
-      '/chey-doug-emma-nana.jpg'
+      '/about/family/emma-burrito.jpg',
+      '/about/family/doug-emma-gaming.png',
+      '/about/family/chey-doug-emma-nana.jpg'
     ]
   }
 }
 
 const aboutFamilyLife = {
   banner: {
-    img: '/family-xmas-tree.jpg'
+    img: '/about/family/family-xmas-tree.jpg'
   },
   textCard: {
     type: 'banner',
@@ -51,12 +51,12 @@ const aboutFamilyLife = {
   imageCards: {
     type: 'stack',
     images: [
-      '/family-thanksgiving.jpg',
-      '/chey-family.jpg',
-      '/carrie-nick-lila.JPG',
-      '/chey-julie.jpg',
-      '/family-dinner.jpg',
-      '/family-matching-shirts.jpg'
+      '/about/family/family-thanksgiving.jpg',
+      '/about/family/chey-family.jpg',
+      '/about/family/carrie-nick-lila.JPG',
+      '/about/family/chey-julie.jpg',
+      '/about/family/family-dinner.jpg',
+      '/about/family/family-matching-shirts.jpg'
     ]
   }
 }
