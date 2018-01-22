@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-parallax src="/starbucks-and-laptop.JPG"></v-parallax>
+        <v-parallax src="/shared/starbucks-and-laptop.JPG"></v-parallax>
         <v-container fluid grid-list-xl class="bkg-white">
             <!-- Contributions Graph -->
             <v-layout row wrap>
