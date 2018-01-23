@@ -13,11 +13,11 @@
                 <v-btn flat :ripple="false" nuxt href="/about">About</v-btn>
             </v-toolbar-items>
         </v-toolbar>
-        <v-navigation-drawer temporary v-model="drawer" light absolute right>
+        <v-navigation-drawer temporary v-model="drawer" light right>
             <v-list>
                 <v-list-tile to="/">
                     <v-list-tile-title class="title">
-                        DF designs
+                        dougiefresh designs
                       </v-list-tile-title>
                 </v-list-tile>
             </v-list>
@@ -40,7 +40,7 @@
     name: 'navigation',
     data () {
       return {
-        drawer: null,
+        drawer: false,
         items: [
           { title: 'Portfolio', icon: 'fa-id-card', to: '/portfolio' },
           { title: 'Open Source', icon: 'fa-github', to: '/open-source' },
