@@ -1,7 +1,7 @@
 <template>
     <v-layout row wrap>
         <v-flex d-flex xs12>
-            <v-card :img="cards[cardIdxInView]" color="grey lighten-5" flat tile :height="minHeight">
+            <v-card v-for="(card, idx) in cards" :key="card" v-show="idx === cardIdxInView" :img="card" color="grey lighten-5" flat tile :height="minHeight">
                 <v-container fill-height>
                     <v-layout row wrap align-center>
                         <v-flex class="text-xs-left">
