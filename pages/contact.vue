@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-parallax src="/shared/starbucks-and-laptop.JPG"></v-parallax>
+        <v-parallax :src="'/shared/starbucks-and-laptop' + imageExtension"></v-parallax>
         <v-container fluid grid-list-xl class="bkg-white">
             <v-layout column align-center justify-center class="mb-5">
                 <card-banner title="this page is still in the works"
@@ -19,9 +19,16 @@
 </style>
 <script>
   import CardBanner from '~/components/card-banner.vue'
+  import { mapState } from 'vuex'
+
   export default {
     components: {
       CardBanner
+    },
+    computed: {
+      ...mapState({
+        imageExtension: state => state.imageExtension
+      })
     }
   }
 </script>

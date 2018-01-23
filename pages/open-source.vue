@@ -1,15 +1,19 @@
 <template>
     <div>
-        <v-parallax src="/shared/starbucks-and-laptop.JPG"></v-parallax>
+        <v-parallax :src="'/shared/starbucks-and-laptop' + imageExtension"></v-parallax>
         <v-container fluid grid-list-xl class="bkg-white">
             <!-- Contributions Graph -->
             <v-layout row wrap>
                 <v-flex d-flex xs12>
-                    <v-card flat tile class="text-sm-center pa-5">
-                        <img class="img-fill" src="https://ghchart.rshah.org/dougiefresh49" alt="contributions">
-                        <v-layout column align-center justify-center>
-                            <h4 class="grey--text mb-0">GitHub Contributions</h4>
-                        </v-layout>
+                    <v-card flat tile class="text-sm-center">
+                        <v-container fill-height>
+                            <v-layout row wrap align-center>
+                                <v-flex class="text-xs-center">
+                                    <img class="img-fill" src="https://ghchart.rshah.org/dougiefresh49" alt="contributions">
+                                    <h3 class="grey--text mb-0">GitHub Contributions</h3>
+                                </v-flex>
+                            </v-layout>
+                        </v-container>
                     </v-card>
                 </v-flex>
             </v-layout>
@@ -113,3 +117,13 @@
     max-height: 100%;
 }
 </style>
+<script>
+  import { mapState } from 'vuex'
+  export default {
+    computed: {
+      ...mapState({
+        imageExtension: state => state.imageExtension
+      })
+    }
+  }
+</script>
