@@ -57,10 +57,10 @@
     },
     methods: {
       doShowImageFirst (idx) {
-        return (idx % 2 === 0 || this.$vuetify.breakpoint.name === 'xs')
+        return (idx % 2 === 0 || this.$vuetify.breakpoint.name === 'xs' || this.$vuetify.breakpoint.name === 'sm')
       },
       doShowImageSecond (idx) {
-        return (idx % 2 === 1 && this.$vuetify.breakpoint.name !== 'xs')
+        return (idx % 2 === 1 && this.$vuetify.breakpoint.name !== 'xs' && this.$vuetify.breakpoint.name !== 'sm')
       }
     }
   }
