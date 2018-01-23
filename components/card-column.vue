@@ -23,8 +23,8 @@
           }
           switch (this.$vuetify.breakpoint.name) {
             case 'xs':
-              return '500px'
             case 'sm':
+              return '500px'
             case 'md':
             case 'lg':
             case 'xl':
