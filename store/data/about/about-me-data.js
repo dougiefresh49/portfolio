@@ -1,6 +1,8 @@
+import {photosUrl} from '../../../config'
+
 const aboutTAMU = {
   banner: {
-    img: '/about/me/texas-am-stadium.webp'
+    img: photosUrl + '/about/me/texas-am-stadium.png'
   },
   textCard: {
     type: 'detailed',
@@ -32,15 +34,15 @@ const aboutTAMU = {
   imageCards: {
     type: 'column',
     images: [
-      '/about/me/aggie-game-with-chey.webp',
-      '/about/me/family-of-aggies.webp'
+      photosUrl + '/about/me/aggie-game-with-chey.png',
+      photosUrl + '/about/me/family-of-aggies.png'
     ]
   }
 }
 
 const aboutWork = {
   banner: {
-    img: '/about/me/fidelity-yard.webp'
+    img: photosUrl + '/about/me/fidelity-yard.png'
   },
   textCard: {
     type: 'detailed',
@@ -74,15 +76,15 @@ const aboutWork = {
   imageCards: {
     type: 'column',
     images: [
-      '/about/me/fidelity-friends.webp',
-      '/about/me/fidelity-team-lunch.webp'
+      photosUrl + '/about/me/fidelity-friends.png',
+      photosUrl + '/about/me/fidelity-team-lunch.png'
     ]
   }
 }
 
 const aboutMe = {
   banner: {
-    img: '/about/me/chey-doug-flowers.webp'
+    img: photosUrl + '/about/me/chey-doug-flowers.png'
   },
   textCard: {
     type: 'detailed',
@@ -122,9 +124,9 @@ const aboutMe = {
   imageCards: {
     type: 'column',
     images: [
-      '/about/me/doug-dogs-cards.webp',
-      '/about/chey-doug-ride.webp',
-      '/about/me/doug-tmnt.webp'
+      photosUrl + '/about/me/doug-dogs-cards.png',
+      photosUrl + '/about/chey-doug-ride.png',
+      photosUrl + '/about/me/doug-tmnt.png'
     ]
   }
 }

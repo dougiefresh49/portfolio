@@ -1,6 +1,8 @@
+import {photosUrl} from '../../../config'
+
 const aboutMarriedLife = {
   banner: {
-    img: '/about/family/chey-doug-flowers2.webp'
+    img: photosUrl + '/about/family/chey-doug-flowers2.png'
   },
   textCard: {
     type: 'banner',
@@ -11,16 +13,16 @@ const aboutMarriedLife = {
   imageCards: {
     type: 'stack',
     images: [
-      '/about/chey-doug-nyc.webp',
-      '/about/chey-doug-ride.webp',
-      '/about/family/chey-doug-booth.webp'
+      photosUrl + '/about/chey-doug-nyc.png',
+      photosUrl + '/about/chey-doug-ride.png',
+      photosUrl + '/about/family/chey-doug-booth.png'
     ]
   }
 }
 
 const aboutDadLife = {
   banner: {
-    img: '/about/family/emma-wubbanub.webp'
+    img: photosUrl + '/about/family/emma-wubbanub.png'
   },
   textCard: {
     type: 'banner',
@@ -31,16 +33,16 @@ const aboutDadLife = {
   imageCards: {
     type: 'stack',
     images: [
-      '/about/family/emma-burrito.webp',
-      '/about/family/doug-emma-gaming.webp',
-      '/about/family/chey-doug-emma-nana.webp'
+      photosUrl + '/about/family/emma-burrito.png',
+      photosUrl + '/about/family/doug-emma-gaming.png',
+      photosUrl + '/about/family/chey-doug-emma-nana.png'
     ]
   }
 }
 
 const aboutFamilyLife = {
   banner: {
-    img: '/about/family/family-xmas-tree.webp'
+    img: photosUrl + '/about/family/family-xmas-tree.png'
   },
   textCard: {
     type: 'banner',
@@ -51,12 +53,12 @@ const aboutFamilyLife = {
   imageCards: {
     type: 'stack',
     images: [
-      '/about/family/family-thanksgiving.webp',
-      '/about/family/chey-family.webp',
-      '/about/family/carrie-nick-lila.webp',
-      '/about/family/chey-julie.webp',
-      '/about/family/family-dinner.webp',
-      '/about/family/family-matching-shirts.webp'
+      photosUrl + '/about/family/family-thanksgiving.png',
+      photosUrl + '/about/family/chey-family.png',
+      photosUrl + '/about/family/carrie-nick-lila.png',
+      photosUrl + '/about/family/chey-julie.png',
+      photosUrl + '/about/family/family-dinner.png',
+      photosUrl + '/about/family/family-matching-shirts.png'
     ]
   }
 }

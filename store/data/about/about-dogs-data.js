@@ -1,3 +1,5 @@
+import {photosUrl} from '../../../config'
+
 const aboutOdin = {
   textCard: {
     type: 'banner',
@@ -8,13 +10,13 @@ const aboutOdin = {
   imageCards: {
     type: 'stack',
     images: [
-      '/about/dogs/odin-couch.webp',
-      '/about/dogs/odin-doug-chey.webp',
-      '/about/dogs/odin-cabinet.webp',
-      '/about/dogs/odin-my-bed.webp',
-      '/about/dogs/odin-onesie.webp',
-      '/about/dogs/odin-doug-napping.webp',
-      '/about/dogs/odin-doug-sleep.webp'
+      photosUrl + '/about/dogs/odin-couch.png',
+      photosUrl + '/about/dogs/odin-doug-chey.png',
+      photosUrl + '/about/dogs/odin-cabinet.png',
+      photosUrl + '/about/dogs/odin-my-bed.png',
+      photosUrl + '/about/dogs/odin-onesie.png',
+      photosUrl + '/about/dogs/odin-doug-napping.png',
+      photosUrl + '/about/dogs/odin-doug-sleep.png'
     ]
   }
 }
@@ -28,12 +30,12 @@ const aboutJack = {
   imageCards: {
     type: 'stack',
     images: [
-      '/about/dogs/jack-terror.webp',
-      '/about/dogs/jack-troopers.webp',
-      '/about/dogs/jack-closeup.webp',
-      '/about/dogs/jack-papa.webp',
-      '/about/dogs/jack-eat-yo-face.webp',
-      '/about/dogs/jack-emma.webp'
+      photosUrl + '/about/dogs/jack-terror.png',
+      photosUrl + '/about/dogs/jack-troopers.png',
+      photosUrl + '/about/dogs/jack-closeup.png',
+      photosUrl + '/about/dogs/jack-papa.png',
+      photosUrl + '/about/dogs/jack-eat-yo-face.png',
+      photosUrl + '/about/dogs/jack-emma.png'
     ]
   }
 }
@@ -47,11 +49,11 @@ const aboutLoki = {
   imageCards: {
     type: 'stack',
     images: [
-      '/about/dogs/loki-covers.webp',
-      '/about/dogs/loki-sleep.webp',
-      '/about/dogs/loki-squirrel.webp',
-      '/about/dogs/loki-ball.webp',
-      '/about/dogs/loki-odin-sleep.webp'
+      photosUrl + '/about/dogs/loki-covers.png',
+      photosUrl + '/about/dogs/loki-sleep.png',
+      photosUrl + '/about/dogs/loki-squirrel.png',
+      photosUrl + '/about/dogs/loki-ball.png',
+      photosUrl + '/about/dogs/loki-odin-sleep.png'
     ]
   }
 }
