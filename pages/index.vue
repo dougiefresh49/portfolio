@@ -35,17 +35,8 @@
     },
     computed: {
       ...mapState({
-        isWebpSupported: state => state.isWebpSupported,
-        imageExtension: state => state.imageExtension,
+        photosUrl: state => state.config.photosUrl,
         cards: state => state.home.cards
-      })
-    },
-    mounted () {
-      this.$store.dispatch('LOAD', {
-        windowSelf: window,
-        key: 'home',
-        updateImageCardExt: false,
-        updateNavCardExt: true
       })
     },
     methods: {
@@ -53,11 +44,11 @@
         switch (this.$vuetify.breakpoint.name) {
           case 'xs':
           case 'sm':
-            return '/home/doug-and-odin-codin-xs' + this.imageExtension
+            return this.photosUrl + '/home/doug-and-odin-codin-xs.png'
           case 'md':
           case 'lg':
           case 'xl':
-            return '/home/doug-and-odin-codin' + this.imageExtension
+            return this.photosUrl + '/home/doug-and-odin-codin.png'
         }
       },
       getParallaxHeight () {
