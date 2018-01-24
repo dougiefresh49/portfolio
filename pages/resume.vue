@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-parallax :src="'/shared/starbucks-and-laptop' + imageExtension"></v-parallax>
+        <v-parallax :src="photosUrl + '/shared/starbucks-and-laptop.png'"></v-parallax>
         <v-container fluid grid-list-xl class="bkg-white">
             <v-layout column align-center justify-center class="mb-5">
                 <card-banner title="this page is still in the works"
@@ -10,7 +10,7 @@
                 </card-banner>
                 <v-btn outline color="grey darken-1" class="mb-5"
                        target="_blank"
-                       href="/resume.pdf">View Resume</v-btn>
+                       :href="assetUrl + '/resume.pdf'">View Resume</v-btn>
             </v-layout>
         </v-container>
     </div>
@@ -27,7 +27,8 @@
     },
     computed: {
       ...mapState({
-        imageExtension: state => state.imageExtension
+        photosUrl: state => state.config.photosUrl,
+        assetUrl: state => state.config.assetUrl
       })
     }
   }

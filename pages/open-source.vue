@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-parallax :src="'/shared/starbucks-and-laptop' + imageExtension"></v-parallax>
+        <v-parallax :src="photosUrl + '/shared/starbucks-and-laptop.png'"></v-parallax>
         <v-container fluid grid-list-xl class="bkg-white">
             <!-- Contributions Graph -->
             <v-layout row wrap>
@@ -122,7 +122,7 @@
   export default {
     computed: {
       ...mapState({
-        imageExtension: state => state.imageExtension
+        photosUrl: state => state.config.photosUrl
       })
     }
   }
