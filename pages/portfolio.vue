@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-parallax :src="photosUrl + '/portfolio/odin-napping-on-the-job.png'"></v-parallax>
+        <v-parallax :src="'/photos/portfolio/odin-napping-on-the-job-md.png'"></v-parallax>
         <!-- Icon Selectors -->
         <v-container fluid grid-list-xl class="bkg-white">
             <v-layout row wrap>
@@ -10,7 +10,7 @@
                             :class="{'active': clustersInView === FidelityProjectClusters}">
                         <v-layout column align-center>
                             <div class="icon-card-body" v-on:click="changeView(FidelityProjectClusters)">
-                                <v-card-media :src="photosUrl + '/portfolio/fid-logo.png'"
+                                <v-card-media :src="'/photos/portfolio/fid-logo.png'"
                                               class="icon-img"
                                               :class="{'small': $vuetify.breakpoint.xsOnly}"
                                               :height="($vuetify.breakpoint.xsOnly) ? '60px' : '120px'">
@@ -95,7 +95,6 @@
     },
     computed: {
       ...mapState({
-        photosUrl: state => state.config.photosUrl,
         FidelityProjectClusters: state => state.portfolio.fidelity,
         FreelanceProjectClusters: state => state.portfolio.freelance,
         clustersInView: state => state.portfolio.clustersInView

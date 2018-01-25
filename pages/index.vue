@@ -35,7 +35,6 @@
     },
     computed: {
       ...mapState({
-        photosUrl: state => state.config.photosUrl,
         cards: state => state.home.cards
       })
     },
@@ -44,11 +43,11 @@
         switch (this.$vuetify.breakpoint.name) {
           case 'xs':
           case 'sm':
-            return this.photosUrl + '/home/doug-and-odin-codin-xs.png'
+            return '/photos/home/doug-and-odin-codin-xs.png'
           case 'md':
           case 'lg':
           case 'xl':
-            return this.photosUrl + '/home/doug-and-odin-codin.png'
+            return '/photos/home/doug-and-odin-codin.png'
         }
       },
       getParallaxHeight () {

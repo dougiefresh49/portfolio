@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-parallax :src="photosUrl + '/shared/starbucks-and-laptop.png'"></v-parallax>
+        <v-parallax :src="'/photos/shared/starbucks-and-laptop.png'"></v-parallax>
         <v-container fluid grid-list-xl class="bkg-white">
             <!-- Contributions Graph -->
             <v-layout row wrap>
@@ -117,13 +117,3 @@
     max-height: 100%;
 }
 </style>
-<script>
-  import { mapState } from 'vuex'
-  export default {
-    computed: {
-      ...mapState({
-        photosUrl: state => state.config.photosUrl
-      })
-    }
-  }
-</script>
