@@ -1,8 +1,6 @@
-import {photosUrl} from '../../config'
-
 const AboutCard = {
   title: 'About',
-  img: photosUrl + '/home/chey-doug-bridge.png',
+  img: '/photos/home/chey-doug-bridge-md.png',
   btn: {
     to: '/about',
     text: 'More'
@@ -12,7 +10,7 @@ const AboutCard = {
 
 const PortfolioCard = {
   title: 'Portfolio',
-  img: photosUrl + '/home/coffee-and-code.png',
+  img: '/photos/home/coffee-and-code-md.png',
   btn: {
     to: '/portfolio',
     text: 'More'
@@ -22,7 +20,7 @@ const PortfolioCard = {
 
 const ResumeCard = {
   title: 'Resume',
-  img: photosUrl + '/home/odin-codin.png',
+  img: '/photos/home/odin-codin-md.png',
   btn: {
     to: '/resume',
     text: 'More'
@@ -32,7 +30,7 @@ const ResumeCard = {
 
 const OpenSourceCard = {
   title: 'Open Source',
-  img: photosUrl + '/shared/lego-avengers.png',
+  img: '/photos/shared/lego-avengers-md.png',
   btn: {
     to: '/open-source',
     text: 'More'

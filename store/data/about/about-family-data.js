@@ -1,8 +1,6 @@
-import {photosUrl} from '../../../config'
-
 const aboutMarriedLife = {
   banner: {
-    img: photosUrl + '/about/family/chey-doug-flowers2.png'
+    img: '/photos/about/family/chey-doug-flowers2.png'
   },
   textCard: {
     type: 'banner',
@@ -13,16 +11,16 @@ const aboutMarriedLife = {
   imageCards: {
     type: 'stack',
     images: [
-      photosUrl + '/about/chey-doug-nyc.png',
-      photosUrl + '/about/chey-doug-ride.png',
-      photosUrl + '/about/family/chey-doug-booth.png'
+      '/photos/about/chey-doug-nyc.png',
+      '/photos/about/chey-doug-ride.png',
+      '/photos/about/family/chey-doug-booth-md.png'
     ]
   }
 }
 
 const aboutDadLife = {
   banner: {
-    img: photosUrl + '/about/family/emma-wubbanub.png'
+    img: '/photos/about/family/emma-wubbanub-md.png'
   },
   textCard: {
     type: 'banner',
@@ -33,16 +31,16 @@ const aboutDadLife = {
   imageCards: {
     type: 'stack',
     images: [
-      photosUrl + '/about/family/emma-burrito.png',
-      photosUrl + '/about/family/doug-emma-gaming.png',
-      photosUrl + '/about/family/chey-doug-emma-nana.png'
+      '/photos/about/family/emma-burrito-md.png',
+      '/photos/about/family/doug-emma-gaming-md.png',
+      '/photos/about/family/chey-doug-emma-nana-md.png'
     ]
   }
 }
 
 const aboutFamilyLife = {
   banner: {
-    img: photosUrl + '/about/family/family-xmas-tree.png'
+    img: '/photos/about/family/family-xmas-tree-md.png'
   },
   textCard: {
     type: 'banner',
@@ -53,12 +51,12 @@ const aboutFamilyLife = {
   imageCards: {
     type: 'stack',
     images: [
-      photosUrl + '/about/family/family-thanksgiving.png',
-      photosUrl + '/about/family/chey-family.png',
-      photosUrl + '/about/family/carrie-nick-lila.png',
-      photosUrl + '/about/family/chey-julie.png',
-      photosUrl + '/about/family/family-dinner.png',
-      photosUrl + '/about/family/family-matching-shirts.png'
+      '/photos/about/family/family-thanksgiving-md.png',
+      '/photos/about/family/chey-family-md.png',
+      '/photos/about/family/carrie-nick-lila-md.png',
+      '/photos/about/family/chey-julie-md.png',
+      '/photos/about/family/family-dinner-md.png',
+      '/photos/about/family/family-matching-shirts-md.png'
     ]
   }
 }

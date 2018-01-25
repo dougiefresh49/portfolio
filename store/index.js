@@ -1,8 +1,6 @@
 import { supportsWebp, updateClusterImageExtensions, updateCardImageExtension } from '../shared/image-operations'
-import * as config from '../config'
 
 export const state = () => ({
-  config: config,
   isWebpSupported: true,
   isWebpChecked: false,
   imageExtension: '.webp'

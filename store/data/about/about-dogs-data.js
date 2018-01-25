@@ -1,5 +1,3 @@
-import {photosUrl} from '../../../config'
-
 const aboutOdin = {
   textCard: {
     type: 'banner',
@@ -10,13 +8,13 @@ const aboutOdin = {
   imageCards: {
     type: 'stack',
     images: [
-      photosUrl + '/about/dogs/odin-couch.png',
-      photosUrl + '/about/dogs/odin-doug-chey.png',
-      photosUrl + '/about/dogs/odin-cabinet.png',
-      photosUrl + '/about/dogs/odin-my-bed.png',
-      photosUrl + '/about/dogs/odin-onesie.png',
-      photosUrl + '/about/dogs/odin-doug-napping.png',
-      photosUrl + '/about/dogs/odin-doug-sleep.png'
+      '/photos/about/dogs/odin-couch-md.png',
+      '/photos/about/dogs/odin-doug-chey-md.png',
+      '/photos/about/dogs/odin-cabinet.png',
+      '/photos/about/dogs/odin-my-bed.png',
+      '/photos/about/dogs/odin-onesie.png',
+      '/photos/about/dogs/odin-doug-napping.png',
+      '/photos/about/dogs/odin-doug-sleep-md.png'
     ]
   }
 }
@@ -30,12 +28,12 @@ const aboutJack = {
   imageCards: {
     type: 'stack',
     images: [
-      photosUrl + '/about/dogs/jack-terror.png',
-      photosUrl + '/about/dogs/jack-troopers.png',
-      photosUrl + '/about/dogs/jack-closeup.png',
-      photosUrl + '/about/dogs/jack-papa.png',
-      photosUrl + '/about/dogs/jack-eat-yo-face.png',
-      photosUrl + '/about/dogs/jack-emma.png'
+      '/photos/about/dogs/jack-terror-md.png',
+      '/photos/about/dogs/jack-troopers.png',
+      '/photos/about/dogs/jack-closeup-md.png',
+      '/photos/about/dogs/jack-papa-md.png',
+      '/photos/about/dogs/jack-eat-yo-face-md.png',
+      '/photos/about/dogs/jack-emma-md.png'
     ]
   }
 }
@@ -49,11 +47,11 @@ const aboutLoki = {
   imageCards: {
     type: 'stack',
     images: [
-      photosUrl + '/about/dogs/loki-covers.png',
-      photosUrl + '/about/dogs/loki-sleep.png',
-      photosUrl + '/about/dogs/loki-squirrel.png',
-      photosUrl + '/about/dogs/loki-ball.png',
-      photosUrl + '/about/dogs/loki-odin-sleep.png'
+      '/photos/about/dogs/loki-covers.png',
+      '/photos/about/dogs/loki-sleep-md.png',
+      '/photos/about/dogs/loki-squirrel-md.png',
+      '/photos/about/dogs/loki-ball-md.png',
+      '/photos/about/dogs/loki-odin-sleep-md.png'
     ]
   }
 }

@@ -1,27 +1,25 @@
-import {photosUrl} from '../../../config'
-
 const aboutVideoGames = {
   textCard: {
     type: 'banner',
     title: 'Gaming',
     desc: 'Bro! Get your controller and lets go!',
     icons: [
-      {img: photosUrl + '/about/gaming/icons/stormtrooper-helmet.png'},
-      {img: photosUrl + '/about/gaming/icons/master-chief-helmet.png', href: 'https://nodejs.org/'},
-      {img: photosUrl + '/about/gaming/icons/titanfall-2-helmet.png', href: 'http://parseplatform.org/'},
-      {img: photosUrl + '/about/gaming/icons/psycho.png', href: 'https://gulpjs.com/'},
-      {img: photosUrl + '/about/gaming/icons/injustice-2-batman-head.png', href: 'https://gulpjs.com/'},
-      {img: photosUrl + '/about/gaming/icons/castle-crashers-head.png', href: 'https://gulpjs.com/'}
+      {img: '/photos/about/gaming/icons/stormtrooper-helmet.png'},
+      {img: '/photos/about/gaming/icons/master-chief-helmet.png', href: 'https://nodejs.org/'},
+      {img: '/photos/about/gaming/icons/titanfall-2-helmet.png', href: 'http://parseplatform.org/'},
+      {img: '/photos/about/gaming/icons/psycho.png', href: 'https://gulpjs.com/'},
+      {img: '/photos/about/gaming/icons/injustice-2-batman-head.png', href: 'https://gulpjs.com/'},
+      {img: '/photos/about/gaming/icons/castle-crashers-head.png', href: 'https://gulpjs.com/'}
     ],
     height: 'auto'
   },
   imageCards: {
     type: 'stack',
     images: [
-      photosUrl + '/about/star-wars-controller.png',
-      photosUrl + '/about/gaming/bf2-snipes.gif',
-      photosUrl + '/about/gaming/titanfall2-swing.gif',
-      photosUrl + '/about/gaming/halo5-tripple.gif'
+      '/photos/about/star-wars-controller-md.png',
+      '/photos/about/gaming/bf2-snipes.gif',
+      '/photos/about/gaming/titanfall2-swing.gif',
+      '/photos/about/gaming/halo5-tripple.gif'
     ]
   }
 }
@@ -35,12 +33,12 @@ const aboutAdventures = {
   imageCards: {
     type: 'stack',
     images: [
-      photosUrl + '/about/chey-doug-nyc.png',
-      photosUrl + '/about/adventures/chey-doug-mickey.png',
-      photosUrl + '/about/adventures/chey-doug-odin-car.png',
-      photosUrl + '/about/adventures/chey-doug-golf.png',
-      photosUrl + '/about/adventures/underoath.png',
-      photosUrl + '/about/adventures/drew-lynch-show.png'
+      '/photos/about/chey-doug-nyc.png',
+      '/photos/about/adventures/chey-doug-mickey.png',
+      '/photos/about/adventures/chey-doug-odin-car.png',
+      '/photos/about/adventures/chey-doug-golf.png',
+      '/photos/about/adventures/underoath.png',
+      '/photos/about/adventures/drew-lynch-show-md.png'
     ]
   }
 }
@@ -55,11 +53,11 @@ const aboutSports = {
   imageCards: {
     type: 'stack',
     images: [
-      photosUrl + '/about/sports/chey-doug-boxing.png',
-      photosUrl + '/about/sports/crossfit.png',
-      photosUrl + '/about/sports/penguin-gym.png',
-      photosUrl + '/about/sports/rangers-game.png',
-      photosUrl + '/about/sports/aggies-att-stadium.png'
+      '/photos/about/sports/chey-doug-boxing.png',
+      '/photos/about/sports/crossfit.png',
+      '/photos/about/sports/penguin-gym.png',
+      '/photos/about/sports/rangers-game-md.png',
+      '/photos/about/sports/aggies-att-stadium-md.png'
     ]
   }
 }
@@ -74,12 +72,12 @@ const aboutCreativity = {
   imageCards: {
     type: 'stack',
     images: [
-      photosUrl + '/shared/lego-avengers.png',
-      photosUrl + '/about/creativity/lego-star-wars.png',
-      photosUrl + '/about/creativity/todo-board.png',
-      photosUrl + '/about/creativity/white-board.png',
-      photosUrl + '/about/creativity/table-before.png',
-      photosUrl + '/about/creativity/table-after.png'
+      '/photos/shared/lego-avengers-md.png',
+      '/photos/about/creativity/lego-star-wars-md.png',
+      '/photos/about/creativity/todo-board.png',
+      '/photos/about/creativity/white-board.png',
+      '/photos/about/creativity/table-before-md.png',
+      '/photos/about/creativity/table-after-md.png'
     ]
   }
 }
