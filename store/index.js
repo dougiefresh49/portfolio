@@ -35,6 +35,6 @@ export const actions = {
       commit('setWebpSupport', isWebpSupported)
     }
     console.log('is webp supported: ', isWebpSupported || state.isWebpSupported)
-    commit('updateImageExtensions', {key, isWebpSupported, updateImgCardExt, updateNavCardExt})
+    // commit('updateImageExtensions', {key, isWebpSupported, updateImgCardExt, updateNavCardExt})
   }
 }

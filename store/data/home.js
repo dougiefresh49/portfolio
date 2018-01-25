@@ -1,6 +1,6 @@
 const AboutCard = {
   title: 'About',
-  img: '/home/chey-doug-bridge.webp',
+  img: '/photos/home/chey-doug-bridge-md.png',
   btn: {
     to: '/about',
     text: 'More'
@@ -10,7 +10,7 @@ const AboutCard = {
 
 const PortfolioCard = {
   title: 'Portfolio',
-  img: '/home/coffee-and-code.webp',
+  img: '/photos/home/coffee-and-code-md.png',
   btn: {
     to: '/portfolio',
     text: 'More'
@@ -20,7 +20,7 @@ const PortfolioCard = {
 
 const ResumeCard = {
   title: 'Resume',
-  img: '/home/odin-codin.webp',
+  img: '/photos/home/odin-codin-md.png',
   btn: {
     to: '/resume',
     text: 'More'
@@ -30,7 +30,7 @@ const ResumeCard = {
 
 const OpenSourceCard = {
   title: 'Open Source',
-  img: '/shared/lego-avengers.webp',
+  img: '/photos/shared/lego-avengers-md.png',
   btn: {
     to: '/open-source',
     text: 'More'

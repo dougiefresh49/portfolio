@@ -1,6 +1,6 @@
 const aboutTAMU = {
   banner: {
-    img: '/about/me/texas-am-stadium.webp'
+    img: '/photos/about/me/texas-am-stadium.png'
   },
   textCard: {
     type: 'detailed',
@@ -32,15 +32,15 @@ const aboutTAMU = {
   imageCards: {
     type: 'column',
     images: [
-      '/about/me/aggie-game-with-chey.webp',
-      '/about/me/family-of-aggies.webp'
+      '/photos/about/me/aggie-game-with-chey-md.png',
+      '/photos/about/me/family-of-aggies.png'
     ]
   }
 }
 
 const aboutWork = {
   banner: {
-    img: '/about/me/fidelity-yard.webp'
+    img: '/photos/about/me/fidelity-yard.png'
   },
   textCard: {
     type: 'detailed',
@@ -74,15 +74,15 @@ const aboutWork = {
   imageCards: {
     type: 'column',
     images: [
-      '/about/me/fidelity-friends.webp',
-      '/about/me/fidelity-team-lunch.webp'
+      '/photos/about/me/fidelity-friends-md.png',
+      '/photos/about/me/fidelity-team-lunch-md.png'
     ]
   }
 }
 
 const aboutMe = {
   banner: {
-    img: '/about/me/chey-doug-flowers.webp'
+    img: '/photos/about/me/chey-doug-flowers.png'
   },
   textCard: {
     type: 'detailed',
@@ -119,12 +119,13 @@ const aboutMe = {
       text: 'Contact Me'
     }
   },
+
   imageCards: {
     type: 'column',
     images: [
-      '/about/me/doug-dogs-cards.webp',
-      '/about/chey-doug-ride.webp',
-      '/about/me/doug-tmnt.webp'
+      '/photos/about/me/doug-dogs-cards-md.png',
+      '/photos/about/chey-doug-ride.png',
+      '/photos/about/me/doug-tmnt.png'
     ]
   }
 }

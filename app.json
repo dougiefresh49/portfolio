@@ -11,6 +11,9 @@
     },
     "HOST": {
       "required": true
+    },
+    "ASSET_URL": {
+      "required": true
     }
   },
   "formation": { },

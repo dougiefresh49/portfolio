@@ -1,6 +1,6 @@
 const aboutMarriedLife = {
   banner: {
-    img: '/about/family/chey-doug-flowers2.webp'
+    img: '/photos/about/family/chey-doug-flowers2.png'
   },
   textCard: {
     type: 'banner',
@@ -11,16 +11,16 @@ const aboutMarriedLife = {
   imageCards: {
     type: 'stack',
     images: [
-      '/about/chey-doug-nyc.webp',
-      '/about/chey-doug-ride.webp',
-      '/about/family/chey-doug-booth.webp'
+      '/photos/about/chey-doug-nyc.png',
+      '/photos/about/chey-doug-ride.png',
+      '/photos/about/family/chey-doug-booth-md.png'
     ]
   }
 }
 
 const aboutDadLife = {
   banner: {
-    img: '/about/family/emma-wubbanub.webp'
+    img: '/photos/about/family/emma-wubbanub-md.png'
   },
   textCard: {
     type: 'banner',
@@ -31,16 +31,16 @@ const aboutDadLife = {
   imageCards: {
     type: 'stack',
     images: [
-      '/about/family/emma-burrito.webp',
-      '/about/family/doug-emma-gaming.webp',
-      '/about/family/chey-doug-emma-nana.webp'
+      '/photos/about/family/emma-burrito-md.png',
+      '/photos/about/family/doug-emma-gaming-md.png',
+      '/photos/about/family/chey-doug-emma-nana-md.png'
     ]
   }
 }
 
 const aboutFamilyLife = {
   banner: {
-    img: '/about/family/family-xmas-tree.webp'
+    img: '/photos/about/family/family-xmas-tree-md.png'
   },
   textCard: {
     type: 'banner',
@@ -51,12 +51,12 @@ const aboutFamilyLife = {
   imageCards: {
     type: 'stack',
     images: [
-      '/about/family/family-thanksgiving.webp',
-      '/about/family/chey-family.webp',
-      '/about/family/carrie-nick-lila.webp',
-      '/about/family/chey-julie.webp',
-      '/about/family/family-dinner.webp',
-      '/about/family/family-matching-shirts.webp'
+      '/photos/about/family/family-thanksgiving-md.png',
+      '/photos/about/family/chey-family-md.png',
+      '/photos/about/family/carrie-nick-lila-md.png',
+      '/photos/about/family/chey-julie-md.png',
+      '/photos/about/family/family-dinner-md.png',
+      '/photos/about/family/family-matching-shirts-md.png'
     ]
   }
 }

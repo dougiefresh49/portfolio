@@ -5,7 +5,7 @@ export const state = () => ({
   AboutFamilyClusters,
   AboutDogsClusters,
   AboutFunClusters,
-  clustersInView: {}
+  clustersInView: AboutMeClusters
 })
 
 export const mutations = {
@@ -14,8 +14,5 @@ export const mutations = {
   }
 }
 export const actions = {
-  nuxtServerInit ({commit}) {
-    commit('about/updateClustersInView')
-  }
 }
 export const getters = {}

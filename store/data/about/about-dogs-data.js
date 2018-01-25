@@ -8,13 +8,13 @@ const aboutOdin = {
   imageCards: {
     type: 'stack',
     images: [
-      '/about/dogs/odin-couch.webp',
-      '/about/dogs/odin-doug-chey.webp',
-      '/about/dogs/odin-cabinet.webp',
-      '/about/dogs/odin-my-bed.webp',
-      '/about/dogs/odin-onesie.webp',
-      '/about/dogs/odin-doug-napping.webp',
-      '/about/dogs/odin-doug-sleep.webp'
+      '/photos/about/dogs/odin-couch-md.png',
+      '/photos/about/dogs/odin-doug-chey-md.png',
+      '/photos/about/dogs/odin-cabinet.png',
+      '/photos/about/dogs/odin-my-bed.png',
+      '/photos/about/dogs/odin-onesie.png',
+      '/photos/about/dogs/odin-doug-napping.png',
+      '/photos/about/dogs/odin-doug-sleep-md.png'
     ]
   }
 }
@@ -28,12 +28,12 @@ const aboutJack = {
   imageCards: {
     type: 'stack',
     images: [
-      '/about/dogs/jack-terror.webp',
-      '/about/dogs/jack-troopers.webp',
-      '/about/dogs/jack-closeup.webp',
-      '/about/dogs/jack-papa.webp',
-      '/about/dogs/jack-eat-yo-face.webp',
-      '/about/dogs/jack-emma.webp'
+      '/photos/about/dogs/jack-terror-md.png',
+      '/photos/about/dogs/jack-troopers.png',
+      '/photos/about/dogs/jack-closeup-md.png',
+      '/photos/about/dogs/jack-papa-md.png',
+      '/photos/about/dogs/jack-eat-yo-face-md.png',
+      '/photos/about/dogs/jack-emma-md.png'
     ]
   }
 }
@@ -47,11 +47,11 @@ const aboutLoki = {
   imageCards: {
     type: 'stack',
     images: [
-      '/about/dogs/loki-covers.webp',
-      '/about/dogs/loki-sleep.webp',
-      '/about/dogs/loki-squirrel.webp',
-      '/about/dogs/loki-ball.webp',
-      '/about/dogs/loki-odin-sleep.webp'
+      '/photos/about/dogs/loki-covers.png',
+      '/photos/about/dogs/loki-sleep-md.png',
+      '/photos/about/dogs/loki-squirrel-md.png',
+      '/photos/about/dogs/loki-ball-md.png',
+      '/photos/about/dogs/loki-odin-sleep-md.png'
     ]
   }
 }
